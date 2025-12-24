@@ -1,0 +1,239 @@
+/**
+ * FAQ Block Editor Styles for SEO Simple Plugin
+ *
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/assets/css
+ */
+
+/* Main container */
+.seo-simple-faq-block-editor {
+	margin: 20px 0;
+}
+
+.seo-simple-faq-container {
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+/* Empty state */
+.seo-simple-faq-empty {
+	padding: 40px 20px;
+	text-align: center;
+	color: #757575;
+	font-style: italic;
+	background-color: #f9f9f9;
+	border-radius: 4px;
+}
+
+.seo-simple-faq-add-first {
+	padding: 20px;
+	text-align: center;
+	border-top: 1px solid #e0e0e0;
+}
+
+/* FAQ items */
+.seo-simple-faq-item {
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.seo-simple-faq-item:last-child {
+	border-bottom: none;
+}
+
+.seo-simple-faq-item-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.seo-simple-faq-item-title {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: #333;
+}
+
+.seo-simple-faq-item-controls {
+	display: flex;
+	gap: 5px;
+}
+
+.seo-simple-faq-move-up,
+.seo-simple-faq-move-down,
+.seo-simple-faq-remove {
+	padding: 5px 8px !important;
+	font-size: 12px !important;
+	min-height: auto !important;
+}
+
+.seo-simple-faq-remove {
+	background-color: #ff4136 !important;
+	border-color: #ff4136 !important;
+	color: #fff !important;
+}
+
+.seo-simple-faq-remove:hover {
+	background-color: #e02d20 !important;
+	border-color: #e02d20 !important;
+}
+
+/* FAQ item content */
+.seo-simple-faq-item-content {
+	padding: 20px;
+}
+
+.seo-simple-faq-field {
+	margin-bottom: 20px;
+}
+
+.seo-simple-faq-field:last-child {
+	margin-bottom: 0;
+}
+
+.seo-simple-faq-label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+	color: #333;
+	font-size: 13px;
+}
+
+.seo-simple-faq-question-input {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #f9f9f9;
+	margin: 0;
+}
+
+.seo-simple-faq-question-input:focus {
+	border-color: #0073aa;
+	box-shadow: 0 0 0 1px #0073aa;
+	outline: none;
+}
+
+.seo-simple-faq-answer-input {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 12px;
+	min-height: 100px;
+	font-size: 14px;
+	line-height: 1.6;
+	background-color: #fff;
+}
+
+.seo-simple-faq-answer-input:focus {
+	border-color: #0073aa;
+	box-shadow: 0 0 0 1px #0073aa;
+	outline: none;
+}
+
+/* Add button */
+.seo-simple-faq-add-button {
+	background-color: #0073aa !important;
+	border-color: #0073aa !important;
+	color: #fff !important;
+	padding: 12px 24px !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	border-radius: 4px !important;
+}
+
+.seo-simple-faq-add-button:hover {
+	background-color: #005a87 !important;
+	border-color: #005a87 !important;
+}
+
+/* Inspector controls */
+.components-panel__body-title {
+	font-weight: 600;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+	.seo-simple-faq-item-header {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10px;
+	}
+	
+	.seo-simple-faq-item-controls {
+		align-self: flex-end;
+	}
+	
+	.seo-simple-faq-item-content {
+		padding: 15px;
+	}
+	
+	.seo-simple-faq-question-input,
+	.seo-simple-faq-answer-input {
+		padding: 10px;
+	}
+}
+
+/* Dark mode support */
+.is-dark-theme .seo-simple-faq-container {
+	border-color: #444;
+	background-color: #1e1e1e;
+}
+
+.is-dark-theme .seo-simple-faq-empty {
+	background-color: #2d2d2d;
+	color: #ccc;
+}
+
+.is-dark-theme .seo-simple-faq-item-header {
+	background-color: #2d2d2d;
+	border-bottom-color: #444;
+}
+
+.is-dark-theme .seo-simple-faq-item-title {
+	color: #fff;
+}
+
+.is-dark-theme .seo-simple-faq-label {
+	color: #fff;
+}
+
+.is-dark-theme .seo-simple-faq-question-input {
+	background-color: #2d2d2d;
+	border-color: #444;
+	color: #fff;
+}
+
+.is-dark-theme .seo-simple-faq-answer-input {
+	background-color: #1e1e1e;
+	border-color: #444;
+	color: #fff;
+}
+
+/* Animation for better UX */
+.seo-simple-faq-item {
+	transition: all 0.2s ease;
+}
+
+.seo-simple-faq-item:hover {
+	background-color: rgba(0, 115, 170, 0.05);
+}
+
+/* Focus states for accessibility */
+.seo-simple-faq-move-up:focus,
+.seo-simple-faq-move-down:focus,
+.seo-simple-faq-remove:focus {
+	box-shadow: 0 0 0 2px #0073aa;
+	outline: none;
+}
+
+/* Validation states */
+.seo-simple-faq-question-input:empty:before,
+.seo-simple-faq-answer-input:empty:before {
+	content: attr(placeholder);
+	color: #999;
+	font-style: italic;
+}

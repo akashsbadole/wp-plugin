@@ -1,0 +1,322 @@
+/**
+ * CSS for SEO Simple Keyword Suggestions.
+ *
+ * @since 1.0.0
+ */
+
+/* Keyword Suggestions Section */
+.seo-simple-keyword-suggestions {
+	margin-top: 15px;
+}
+
+.seo-simple-keyword-suggestions .keyword-input-container {
+	display: flex;
+	margin-bottom: 15px;
+}
+
+.seo-simple-keyword-suggestions .keyword-input {
+	flex: 1;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.seo-simple-keyword-suggestions .keyword-input:focus {
+	outline: none;
+	border-color: #0073aa;
+	box-shadow: 0 0 0 1px #0073aa;
+}
+
+.seo-simple-keyword-suggestions .get-suggestions-btn {
+	margin-left: 10px;
+	padding: 8px 16px;
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.2s;
+}
+
+.seo-simple-keyword-suggestions .get-suggestions-btn:hover {
+	background: #005a87;
+}
+
+.seo-simple-keyword-suggestions .get-suggestions-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+/* Suggestions Container */
+.seo-simple-keyword-suggestions .suggestions-container {
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.seo-simple-keyword-suggestions .suggestion-item {
+	padding: 12px 15px;
+	border-bottom: 1px solid #f0f0f0;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.seo-simple-keyword-suggestions .suggestion-item:last-child {
+	border-bottom: none;
+}
+
+.seo-simple-keyword-suggestions .suggestion-item:hover {
+	background: #f9f9f9;
+}
+
+.seo-simple-keyword-suggestions .suggestion-item.selected {
+	background: #e6f3ff;
+}
+
+.seo-simple-keyword-suggestions .suggestion-keyword {
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.seo-simple-keyword-suggestions .suggestion-metrics {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.seo-simple-keyword-suggestions .suggestion-metric {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.seo-simple-keyword-suggestions .suggestion-metric-label {
+	margin-right: 5px;
+}
+
+/* Difficulty Indicators */
+.seo-simple-keyword-suggestions .difficulty-indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.seo-simple-keyword-suggestions .difficulty-easy {
+	background-color: #46b450;
+}
+
+.seo-simple-keyword-suggestions .difficulty-medium {
+	background-color: #ffb900;
+}
+
+.seo-simple-keyword-suggestions .difficulty-hard {
+	background-color: #dc3232;
+}
+
+/* Volume Indicators */
+.seo-simple-keyword-suggestions .volume-indicator {
+	width: 60px;
+	height: 4px;
+	background-color: #e0e0e0;
+	border-radius: 2px;
+	position: relative;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.seo-simple-keyword-suggestions .volume-indicator-fill {
+	height: 100%;
+	background-color: #0073aa;
+	border-radius: 2px;
+}
+
+/* Loading State */
+.seo-simple-keyword-suggestions .loading {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+.seo-simple-keyword-suggestions .loading::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #f3f3f3;
+	border-top: 2px solid #0073aa;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.seo-simple-keyword-suggestions .empty-state {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+/* Error State */
+.seo-simple-keyword-suggestions .error-state {
+	text-align: center;
+	padding: 20px;
+	color: #dc3232;
+}
+
+/* Trending Keywords */
+.seo-simple-keyword-suggestions .trending-keywords {
+	margin-top: 20px;
+}
+
+.seo-simple-keyword-suggestions .trending-keywords h4 {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #333;
+}
+
+.seo-simple-keyword-suggestions .trending-keyword {
+	display: inline-block;
+	background: #f0f0f0;
+	padding: 4px 8px;
+	margin: 0 5px 5px 0;
+	border-radius: 3px;
+	font-size: 12px;
+	color: #333;
+	text-decoration: none;
+	transition: background-color 0.2s;
+}
+
+.seo-simple-keyword-suggestions .trending-keyword:hover {
+	background: #e0e0e0;
+}
+
+/* Keyword Actions */
+.seo-simple-keyword-suggestions .suggestion-actions {
+	margin-top: 5px;
+}
+
+.seo-simple-keyword-suggestions .use-keyword-btn {
+	font-size: 12px;
+	padding: 3px 8px;
+	background: #f0f0f0;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.seo-simple-keyword-suggestions .use-keyword-btn:hover {
+	background: #e0e0e0;
+}
+
+/* Dashboard Widget */
+#seo_simple_keyword_suggestions .inside {
+	padding: 10px;
+}
+
+#seo_simple_keyword_suggestions .trending-keywords-list {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+#seo_simple_keyword_suggestions .trending-keyword-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+#seo_simple_keyword_suggestions .trending-keyword-item:last-child {
+	border-bottom: none;
+}
+
+#seo_simple_keyword_suggestions .trending-keyword-title {
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 3px;
+}
+
+#seo_simple_keyword_suggestions .trending-keyword-metrics {
+	font-size: 11px;
+	color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+	.seo-simple-keyword-suggestions .keyword-input-container {
+		flex-direction: column;
+	}
+	
+	.seo-simple-keyword-suggestions .get-suggestions-btn {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestion-metrics {
+		flex-wrap: wrap;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestion-metric {
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+}
+
+/* Dark Mode Support */
+@media screen and (prefers-color-scheme: dark) {
+	.seo-simple-keyword-suggestions .keyword-input {
+		background-color: #2d2d2d;
+		border-color: #555;
+		color: #fff;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestions-container {
+		background-color: #2d2d2d;
+		border-color: #555;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestion-item {
+		border-color: #444;
+		color: #fff;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestion-item:hover {
+		background-color: #3a3a3a;
+	}
+	
+	.seo-simple-keyword-suggestions .suggestion-keyword {
+		color: #fff;
+	}
+	
+	.seo-simple-keyword-suggestions .trending-keyword {
+		background-color: #444;
+		color: #fff;
+	}
+	
+	.seo-simple-keyword-suggestions .trending-keyword:hover {
+		background-color: #555;
+	}
+	
+	.seo-simple-keyword-suggestions .use-keyword-btn {
+		background-color: #444;
+		border-color: #555;
+		color: #fff;
+	}
+	
+	.seo-simple-keyword-suggestions .use-keyword-btn:hover {
+		background-color: #555;
+	}
+}

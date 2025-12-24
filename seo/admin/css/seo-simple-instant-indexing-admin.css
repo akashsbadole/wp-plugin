@@ -1,0 +1,455 @@
+/**
+ * Instant Indexing Admin Styles
+ *
+ * @since      1.0.0
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/admin/css
+ */
+
+/* Instant Indexing Page */
+.seo-simple-instant-indexing-page {
+    margin: 20px 0;
+}
+
+.seo-simple-indexing-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccd0d4;
+    margin-bottom: 20px;
+}
+
+.seo-simple-indexing-tabs .tab-button {
+    padding: 10px 15px;
+    background: #f1f1f1;
+    border: 1px solid #ccd0d4;
+    border-bottom: none;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.2s ease;
+}
+
+.seo-simple-indexing-tabs .tab-button:hover {
+    background: #e5e5e5;
+}
+
+.seo-simple-indexing-tabs .tab-button.active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.seo-simple-indexing-tab {
+    display: none;
+}
+
+.seo-simple-indexing-tab.active {
+    display: block;
+}
+
+.seo-simple-indexing-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+.seo-simple-indexing-section-header {
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.seo-simple-indexing-section-content {
+    padding: 15px;
+}
+
+.seo-simple-indexing-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seo-simple-indexing-form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.seo-simple-indexing-form-table td {
+    padding: 15px 10px;
+}
+
+.seo-simple-indexing-form-table td label {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.seo-simple-indexing-form-table .description {
+    color: #666;
+    font-style: italic;
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+/* URL Submission */
+.seo-simple-url-submission {
+    margin-bottom: 20px;
+}
+
+.seo-simple-url-submission .url-input {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.seo-simple-engines {
+    margin: 15px 0;
+}
+
+.seo-simple-engines .engine-option {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.seo-simple-submission-results {
+    margin-top: 20px;
+    display: none;
+}
+
+.seo-simple-submission-results .success {
+    color: #46b450;
+    font-weight: bold;
+}
+
+.seo-simple-submission-results .error {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+/* Bulk Submission */
+.seo-simple-bulk-submission {
+    margin-bottom: 20px;
+}
+
+.seo-simple-posts-table {
+    margin: 15px 0;
+}
+
+.seo-simple-posts-table th {
+    font-weight: 600;
+}
+
+.seo-simple-bulk-engines {
+    margin: 15px 0;
+}
+
+.seo-simple-bulk-engines .engine-option {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.seo-simple-bulk-results {
+    margin-top: 20px;
+    display: none;
+}
+
+.seo-simple-bulk-summary {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.seo-simple-bulk-results .engine-result {
+    margin-bottom: 5px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+.seo-simple-bulk-results .engine-result.success {
+    background-color: #f0f8f0;
+    color: #2e7d32;
+}
+
+.seo-simple-bulk-results .engine-result.error {
+    background-color: #fff3f3;
+    color: #d32f2f;
+}
+
+/* Statistics */
+.seo-simple-stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-stat {
+    flex: 1;
+    min-width: 150px;
+    margin: 0 10px 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.seo-simple-stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #23282d;
+    margin-bottom: 5px;
+}
+
+.seo-simple-stat-label {
+    font-size: 13px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.seo-simple-progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.seo-simple-progress-bar-fill {
+    height: 100%;
+    background-color: #0073aa;
+    transition: width 0.3s ease;
+}
+
+/* History */
+.seo-simple-history-table {
+    margin: 15px 0;
+}
+
+.seo-simple-history-table th {
+    font-weight: 600;
+}
+
+.seo-simple-history-pagination {
+    margin: 15px 0;
+}
+
+.seo-simple-history-pagination .tablenav-pages {
+    display: flex;
+    justify-content: center;
+}
+
+.seo-simple-history-pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.seo-simple-history-pagination a:hover {
+    background: #e5e5e5;
+}
+
+.seo-simple-history-pagination a.current {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+/* Recent Submissions */
+.seo-simple-recent-submissions {
+    margin-top: 20px;
+}
+
+.seo-simple-recent-submissions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seo-simple-recent-submissions th,
+.seo-simple-recent-submissions td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.seo-simple-recent-submissions th {
+    font-weight: 600;
+    background: #f9f9f9;
+}
+
+.seo-simple-recent-submissions tr:last-child td {
+    border-bottom: none;
+}
+
+.seo-simple-recent-submissions .engine-status {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+.seo-simple-recent-submissions .engine-status.success {
+    background-color: #f0f8f0;
+    color: #2e7d32;
+}
+
+.seo-simple-recent-submissions .engine-status.error {
+    background-color: #fff3f3;
+    color: #d32f2f;
+}
+
+/* Meta Box */
+.seo-simple-instant-indexing-meta-box {
+    padding: 10px 0;
+}
+
+.seo-simple-indexing-status {
+    margin-bottom: 15px;
+}
+
+.seo-simple-indexing-status .status-item {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.seo-simple-indexing-status .status-item.success {
+    background-color: #f0f8f0;
+    color: #2e7d32;
+}
+
+.seo-simple-indexing-status .status-item.error {
+    background-color: #fff3f3;
+    color: #d32f2f;
+}
+
+.seo-simple-indexing-buttons {
+    margin-top: 10px;
+}
+
+.seo-simple-indexing-buttons .button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.seo-simple-indexing-engines {
+    margin-top: 10px;
+}
+
+.seo-simple-indexing-engines .engine-option {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .seo-simple-stats-grid {
+        flex-direction: column;
+    }
+    
+    .seo-simple-stat {
+        margin: 0 0 15px;
+    }
+    
+    .seo-simple-indexing-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .seo-simple-indexing-tabs .tab-button {
+        margin-bottom: 5px;
+    }
+    
+    .seo-simple-url-submission .url-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .seo-simple-engines .engine-option,
+    .seo-simple-bulk-engines .engine-option {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .seo-simple-indexing-form-table th,
+    .seo-simple-indexing-form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .seo-simple-indexing-form-table th {
+        font-weight: bold;
+    }
+}
+
+/* Loading Spinner */
+.seo-simple-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Tooltips */
+.seo-simple-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.seo-simple-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.seo-simple-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.seo-simple-tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}

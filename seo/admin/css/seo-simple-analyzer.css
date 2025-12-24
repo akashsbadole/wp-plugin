@@ -1,0 +1,462 @@
+/**
+ * CSS for SEO Simple Analyzer.
+ *
+ * @since 1.0.0
+ */
+
+/* Analyzer Section */
+.seo-simple-analyzer {
+	margin-top: 15px;
+}
+
+/* Score Display */
+.seo-simple-analyzer .score-display {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.seo-simple-analyzer .score-overall {
+	text-align: center;
+}
+
+.seo-simple-analyzer .score-number {
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analyzer .score-label {
+	font-size: 12px;
+	color: #666;
+}
+
+.seo-simple-analyzer .score-breakdown {
+	display: flex;
+	flex: 1;
+	margin-left: 20px;
+}
+
+.seo-simple-analyzer .score-item {
+	flex: 1;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.seo-simple-analyzer .score-item-title {
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analyzer .score-item-value {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Score Colors */
+.seo-simple-analyzer .score-good {
+	color: #46b450;
+}
+
+.seo-simple-analyzer .score-okay {
+	color: #ffb900;
+}
+
+.seo-simple-analyzer .score-warning {
+	color: #ff9800;
+}
+
+.seo-simple-analyzer .score-bad {
+	color: #dc3232;
+}
+
+/* Status Icons */
+.seo-simple-analyzer .status-good {
+	color: #46b450;
+}
+
+.seo-simple-analyzer .status-warning {
+	color: #ffb900;
+}
+
+.seo-simple-analyzer .status-error {
+	color: #dc3232;
+}
+
+/* Analysis Tabs */
+.seo-simple-analyzer .analysis-tabs {
+	margin-bottom: 15px;
+}
+
+.seo-simple-analyzer .tab-nav {
+	display: flex;
+	border-bottom: 1px solid #ddd;
+}
+
+.seo-simple-analyzer .tab-nav button {
+	background: none;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #666;
+	border-bottom: 2px solid transparent;
+	transition: all 0.2s;
+}
+
+.seo-simple-analyzer .tab-nav button:hover {
+	color: #333;
+}
+
+.seo-simple-analyzer .tab-nav button.active {
+	color: #0073aa;
+	border-bottom-color: #0073aa;
+}
+
+.seo-simple-analyzer .tab-content {
+	display: none;
+	padding: 15px 0;
+}
+
+.seo-simple-analyzer .tab-content.active {
+	display: block;
+}
+
+/* Checks List */
+.seo-simple-analyzer .checks-list {
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.seo-simple-analyzer .check-item {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.seo-simple-analyzer .check-item:last-child {
+	border-bottom: none;
+}
+
+.seo-simple-analyzer .check-icon {
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.seo-simple-analyzer .check-details {
+	flex: 1;
+}
+
+.seo-simple-analyzer .check-title {
+	font-weight: 600;
+	margin-bottom: 3px;
+}
+
+.seo-simple-analyzer .check-message {
+	font-size: 12px;
+	color: #666;
+}
+
+.seo-simple-analyzer .check-value {
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+/* Recommendations */
+.seo-simple-analyzer .recommendations {
+	margin-top: 20px;
+}
+
+.seo-simple-analyzer .recommendations-title {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.seo-simple-analyzer .recommendation-item {
+	padding: 10px;
+	background: #f9f9f9;
+	border-left: 4px solid #ffb900;
+	margin-bottom: 10px;
+	border-radius: 0 4px 4px 0;
+}
+
+.seo-simple-analyzer .recommendation-item.high-priority {
+	border-left-color: #dc3232;
+}
+
+.seo-simple-analyzer .recommendation-item.medium-priority {
+	border-left-color: #ffb900;
+}
+
+.seo-simple-analyzer .recommendation-item.low-priority {
+	border-left-color: #46b450;
+}
+
+.seo-simple-analyzer .recommendation-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analyzer .recommendation-message {
+	font-size: 13px;
+	color: #333;
+}
+
+/* Action Buttons */
+.seo-simple-analyzer .analyzer-actions {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.seo-simple-analyzer .analyze-btn {
+	background: #0073aa;
+	color: #fff;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.2s;
+}
+
+.seo-simple-analyzer .analyze-btn:hover {
+	background: #005a87;
+}
+
+.seo-simple-analyzer .analyze-btn:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.seo-simple-analyzer .clear-cache-btn {
+	background: none;
+	border: 1px solid #ddd;
+	color: #666;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.seo-simple-analyzer .clear-cache-btn:hover {
+	border-color: #999;
+	color: #333;
+}
+
+/* Loading State */
+.seo-simple-analyzer .loading {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+.seo-simple-analyzer .loading::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #f3f3f3;
+	border-top: 2px solid #0073aa;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.seo-simple-analyzer .empty-state {
+	text-align: center;
+	padding: 20px;
+	color: #666;
+}
+
+/* Error State */
+.seo-simple-analyzer .error-state {
+	text-align: center;
+	padding: 20px;
+	color: #dc3232;
+}
+
+/* Dashboard Widget */
+#seo_simple_analyzer .inside {
+	padding: 10px;
+}
+
+#seo_simple_analyzer .posts-needing-improvement {
+	max-height: 200px;
+	overflow-y: auto;
+}
+
+#seo_simple_analyzer .post-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+#seo_simple_analyzer .post-item:last-child {
+	border-bottom: none;
+}
+
+#seo_simple_analyzer .post-title {
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 3px;
+}
+
+#seo_simple_analyzer .post-title a {
+	color: #333;
+	text-decoration: none;
+}
+
+#seo_simple_analyzer .post-title a:hover {
+	color: #0073aa;
+}
+
+#seo-simple-analyzer .post-scores {
+	display: flex;
+	align-items: center;
+	font-size: 11px;
+	color: #666;
+}
+
+#seo_simple_analyzer .post-score {
+	margin-right: 10px;
+}
+
+#seo_simple_analyzer .post-score-value {
+	font-weight: bold;
+}
+
+#seo_simple_analyzer .post-recommendations {
+	color: #dc3232;
+}
+
+/* Focus Keyword Input */
+.seo-simple-analyzer .focus-keyword-input {
+	margin-bottom: 15px;
+}
+
+.seo-simple-analyzer .focus-keyword-input label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analyzer .focus-keyword-input input {
+	width: 100%;
+	padding: 8px 12px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.seo-simple-analyzer .focus-keyword-input input:focus {
+	outline: none;
+	border-color: #0073aa;
+	box-shadow: 0 0 0 1px #0073aa;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+	.seo-simple-analyzer .score-display {
+		flex-direction: column;
+	}
+	
+	.seo-simple-analyzer .score-breakdown {
+		margin-left: 0;
+		margin-top: 15px;
+		width: 100%;
+	}
+	
+	.seo-simple-analyzer .tab-nav {
+		flex-wrap: wrap;
+	}
+	
+	.seo-simple-analyzer .tab-nav button {
+		flex: 1;
+		min-width: 100px;
+		text-align: center;
+	}
+	
+	.seo-simple-analyzer .analyzer-actions {
+		flex-direction: column;
+	}
+	
+	.seo-simple-analyzer .analyze-btn,
+	.seo-simple-analyzer .clear-cache-btn {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+/* Dark Mode Support */
+@media screen and (prefers-color-scheme: dark) {
+	.seo-simple-analyzer .score-display,
+	.seo-simple-analyzer .recommendation-item {
+		background-color: #2d2d2d;
+	}
+	
+	.seo-simple-analyzer .check-item {
+		border-color: #444;
+	}
+	
+	.seo-simple-analyzer .check-message {
+		color: #ccc;
+	}
+	
+	.seo-simple-analyzer .recommendation-message {
+		color: #ddd;
+	}
+	
+	.seo-simple-analyzer .tab-nav {
+		border-color: #555;
+	}
+	
+	.seo-simple-analyzer .tab-nav button {
+		color: #ccc;
+	}
+	
+	.seo-simple-analyzer .tab-nav button:hover {
+		color: #fff;
+	}
+	
+	.seo-simple-analyzer .tab-nav button.active {
+		color: #0073aa;
+	}
+	
+	.seo-simple-analyzer .clear-cache-btn {
+		background: none;
+		border-color: #555;
+		color: #ccc;
+	}
+	
+	.seo-simple-analyzer .clear-cache-btn:hover {
+		border-color: #777;
+		color: #fff;
+	}
+	
+	#seo_simple_analyzer .post-title a {
+		color: #ddd;
+	}
+	
+	#seo_simple_analyzer .post-title a:hover {
+		color: #0073aa;
+	}
+	
+	#seo_simple_analyzer .post-scores {
+		color: #ccc;
+	}
+}

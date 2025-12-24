@@ -1,0 +1,468 @@
+/**
+ * Bulk SEO editor styles.
+ *
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/admin/css
+ */
+
+.seo-simple-bulk-editor-container {
+	margin-top: 20px;
+}
+
+.seo-simple-bulk-editor-tabs {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.seo-simple-tab-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-bottom: 1px solid #ccd0d4;
+	background: #f8f9f9;
+}
+
+.seo-simple-tab-nav li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.seo-simple-tab-nav li a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #555;
+	border-right: 1px solid #ddd;
+}
+
+.seo-simple-tab-nav li a:hover {
+	background: #f1f1f1;
+}
+
+.seo-simple-tab-nav li.active a {
+	background: #fff;
+	color: #23282d;
+	border-bottom: 1px solid #fff;
+	margin-bottom: -1px;
+}
+
+.seo-simple-tab-content {
+	padding: 20px;
+}
+
+.seo-simple-tab-pane {
+	display: none;
+}
+
+.seo-simple-tab-pane.active {
+	display: block;
+}
+
+/* Bulk Edit Styles */
+.seo-simple-bulk-edit-form {
+	margin-bottom: 20px;
+}
+
+.seo-simple-bulk-edit-form .form-table {
+	margin-top: 20px;
+}
+
+.seo-simple-bulk-edit-form .form-table th {
+	width: 200px;
+}
+
+.seo-simple-bulk-edit-form .form-table td {
+	padding: 15px 10px;
+}
+
+.seo-simple-bulk-edit-form .description {
+	color: #666;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+/* Post List Styles */
+.seo-simple-post-list {
+	margin-top: 20px;
+}
+
+.seo-simple-post-list table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.seo-simple-post-list th,
+.seo-simple-post-list td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.seo-simple-post-list th {
+	background: #f8f9f9;
+	font-weight: bold;
+}
+
+.seo-simple-post-list tr:hover {
+	background: #f8f9f9;
+}
+
+.seo-simple-post-list .column-cb {
+	width: 30px;
+}
+
+.seo-simple-post-list .column-title {
+	width: 30%;
+}
+
+.seo-simple-post-list .column-seo_title,
+.seo-simple-post-list .column-seo_description,
+.seo-simple-post-list .column-seo_focus_keyword {
+	width: 20%;
+}
+
+.seo-simple-post-list .column-seo_score {
+	width: 80px;
+	text-align: center;
+}
+
+.seo-simple-post-list .seo-simple-missing {
+	color: #999;
+	font-style: italic;
+}
+
+.seo-simple-post-list .seo-simple-score {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.seo-simple-post-list .seo-simple-score-green {
+	background-color: #46b450;
+}
+
+.seo-simple-post-list .seo-simple-score-orange {
+	background-color: #ffb900;
+}
+
+.seo-simple-post-list .seo-simple-score-red {
+	background-color: #dc3232;
+}
+
+/* Filter Styles */
+.seo-simple-filter-container {
+	margin-bottom: 20px;
+}
+
+.seo-simple-filter-container label {
+	margin-right: 10px;
+}
+
+.seo-simple-filter-container select {
+	margin-right: 20px;
+}
+
+/* Selection Info Styles */
+.seo-simple-selection-info {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: #f8f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.seo-simple-selection-info .selected-count {
+	font-weight: bold;
+}
+
+/* Results Styles */
+.seo-simple-results {
+	margin-top: 20px;
+}
+
+.seo-simple-results .notice {
+	margin: 10px 0;
+}
+
+/* Analysis Results Styles */
+.seo-simple-analysis-results {
+	margin-top: 20px;
+}
+
+.seo-simple-analysis-result {
+	margin-bottom: 20px;
+	padding: 15px;
+	background: #f8f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.seo-simple-analysis-result h5 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.seo-simple-score-display {
+	margin-bottom: 15px;
+}
+
+.seo-simple-score-circle {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.seo-simple-score-circle.seo-simple-score-good {
+	background-color: #46b450;
+}
+
+.seo-simple-score-circle.seo-simple-score-warning {
+	background-color: #ffb900;
+}
+
+.seo-simple-score-circle.seo-simple-score-bad {
+	background-color: #dc3232;
+}
+
+.seo-simple-analysis-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analysis-status {
+	margin-right: 10px;
+}
+
+.seo-simple-analysis-status .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+}
+
+.seo-simple-analysis-item.seo-simple-status-good .seo-simple-analysis-status .dashicons {
+	color: #46b450;
+}
+
+.seo-simple-analysis-item.seo-simple-status-warning .seo-simple-analysis-status .dashicons {
+	color: #ffb900;
+}
+
+.seo-simple-analysis-item.seo-simple-status-error .seo-simple-analysis-status .dashicons {
+	color: #dc3232;
+}
+
+/* Export/Import Styles */
+.seo-simple-export-import-container {
+	display: flex;
+	gap: 20px;
+}
+
+.seo-simple-export-container,
+.seo-simple-import-container {
+	flex: 1;
+	padding: 20px;
+	background: #f8f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.seo-simple-export-container h3,
+.seo-simple-import-container h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.seo-simple-export-buttons {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.seo-simple-import-form {
+	margin-bottom: 15px;
+}
+
+.seo-simple-import-form .form-group {
+	margin-bottom: 15px;
+}
+
+.seo-simple-import-form label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.seo-simple-import-form input[type="file"] {
+	width: 100%;
+}
+
+/* Progress Bar Styles */
+.seo-simple-progress {
+	margin: 20px 0;
+	padding: 15px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.seo-simple-progress-bar {
+	height: 20px;
+	background: #e7e7e7;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+
+.seo-simple-progress-bar div {
+	height: 100%;
+	background: #0073aa;
+	width: 0%;
+	transition: width 0.3s;
+}
+
+.seo-simple-progress-text {
+	text-align: center;
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+/* Bulk Actions Styles */
+.seo-simple-bulk-actions {
+	margin-top: 20px;
+	padding: 15px;
+	background: #f8f9f9;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+.seo-simple-bulk-actions button {
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+	.seo-simple-tab-nav {
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+	
+	.seo-simple-tab-nav li {
+		display: block;
+		float: left;
+	}
+	
+	.seo-simple-bulk-edit-form .form-table th {
+		width: auto;
+	}
+	
+	.seo-simple-post-list {
+		overflow-x: auto;
+	}
+	
+	.seo-simple-export-import-container {
+		flex-direction: column;
+	}
+	
+	.seo-simple-export-buttons {
+		flex-direction: column;
+	}
+}
+
+/* Loading Spinner */
+.seo-simple-loading {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url('../../images/spinner.gif') no-repeat center;
+	background-size: contain;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+/* Tooltips */
+.seo-simple-tooltip {
+	position: relative;
+	cursor: help;
+}
+
+.seo-simple-tooltip::before {
+	content: attr(data-tooltip);
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 3px;
+	font-size: 12px;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 1000;
+}
+
+.seo-simple-tooltip::after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 5px solid transparent;
+	border-top-color: #333;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 1000;
+}
+
+.seo-simple-tooltip:hover::before,
+.seo-simple-tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Form Validation */
+.seo-simple-form-error {
+	color: #dc3232;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.seo-simple-form-field.error input,
+.seo-simple-form-field.error textarea {
+	border-color: #dc3232;
+}
+
+/* Character Counters */
+.seo-simple-char-counter {
+	text-align: right;
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+.seo-simple-char-counter.warning {
+	color: #ffb900;
+}
+
+.seo-simple-char-counter.error {
+	color: #dc3232;
+}

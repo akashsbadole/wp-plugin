@@ -1,0 +1,340 @@
+/**
+ * Gutenberg integration styles for SEO Simple plugin.
+ *
+ * @link       https://example.com
+ * @since      1.0.0
+ *
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/admin/css
+ */
+
+/* SEO Sidebar Styles */
+.seo-simple-score {
+	margin-bottom: 15px;
+}
+
+.seo-simple-score-value {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.seo-simple-score-status {
+	font-size: 0.9em;
+	color: #555;
+}
+
+.seo-simple-social-image {
+	margin-bottom: 15px;
+}
+
+.seo-simple-social-image img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/* Score Status Colors */
+.seo-simple-score-good {
+	color: #46b450;
+}
+
+.seo-simple-score-ok {
+	color: #ffb900;
+}
+
+.seo-simple-score-bad {
+	color: #dc3232;
+}
+
+/* Loading States */
+.seo-simple-loading {
+	position: relative;
+}
+
+.seo-simple-loading::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba( 255, 255, 255, 0.7 );
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Responsive Styles */
+@media ( max-width: 782px ) {
+	.seo-simple-score-value {
+		font-size: 1.5em;
+	}
+}
+
+/* Component Overrides */
+.components-panel__body.is-opened {
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.components-panel__body .seo-simple-score {
+	padding: 0 15px 15px;
+}
+
+.components-panel__body .seo-simple-social-image {
+	padding: 0 15px 15px;
+}
+
+/* Button Styles */
+.seo-simple-button {
+	margin-right: 10px;
+}
+
+.seo-simple-button:last-child {
+	margin-right: 0;
+}
+
+/* Form Field Styles */
+.seo-simple-field {
+	margin-bottom: 15px;
+}
+
+.seo-simple-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-field input,
+.seo-simple-field textarea {
+	width: 100%;
+}
+
+/* Preview Styles */
+.seo-simple-preview {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 10px;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.seo-simple-preview-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.seo-simple-preview-description {
+	font-size: 0.9em;
+	color: #555;
+}
+
+/* Social Image Preview */
+.seo-simple-social-image-preview {
+	margin-top: 10px;
+	position: relative;
+}
+
+.seo-simple-social-image-preview img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.seo-simple-social-image-preview .seo-simple-remove-image {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background: #dc3232;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.seo-simple-social-image-preview .seo-simple-remove-image:hover {
+	background: #b71c1c;
+}
+
+/* Analysis Results */
+.seo-simple-analysis-results {
+	margin-top: 15px;
+}
+
+.seo-simple-analysis-item {
+	padding: 10px;
+	border-left: 4px solid #ddd;
+	margin-bottom: 10px;
+	background: #f9f9f9;
+}
+
+.seo-simple-analysis-item.seo-good {
+	border-left-color: #46b450;
+}
+
+.seo-simple-analysis-item.seo-ok {
+	border-left-color: #ffb900;
+}
+
+.seo-simple-analysis-item.seo-bad {
+	border-left-color: #dc3232;
+}
+
+.seo-simple-analysis-item-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.seo-simple-analysis-item-description {
+	font-size: 0.9em;
+	color: #555;
+}
+
+/* Focus Keyword Highlight */
+.seo-simple-focus-keyword {
+	background: #e6f7ff;
+	border: 1px solid #91d5ff;
+	padding: 2px 4px;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+/* Character Count */
+.seo-simple-character-count {
+	font-size: 0.8em;
+	color: #555;
+	text-align: right;
+	margin-top: 5px;
+}
+
+.seo-simple-character-count.warning {
+	color: #ffb900;
+}
+
+.seo-simple-character-count.error {
+	color: #dc3232;
+}
+
+/* Readability Score */
+.seo-simple-readability-score {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.seo-simple-readability-score-label {
+	font-weight: bold;
+}
+
+.seo-simple-readability-score-value {
+	font-weight: bold;
+}
+
+/* SEO Score */
+.seo-simple-seo-score {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.seo-simple-seo-score-label {
+	font-weight: bold;
+}
+
+.seo-simple-seo-score-value {
+	font-weight: bold;
+}
+
+/* Progress Bar */
+.seo-simple-progress-bar {
+	width: 100%;
+	height: 10px;
+	background: #ddd;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.seo-simple-progress-bar-fill {
+	height: 100%;
+	background: #46b450;
+	transition: width 0.3s ease;
+}
+
+.seo-simple-progress-bar-fill.seo-ok {
+	background: #ffb900;
+}
+
+.seo-simple-progress-bar-fill.seo-bad {
+	background: #dc3232;
+}
+
+/* Tooltip */
+.seo-simple-tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: help;
+}
+
+.seo-simple-tooltip::after {
+	content: attr( data-tooltip );
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translateX( -50% );
+	background: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 0.8em;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 1000;
+}
+
+.seo-simple-tooltip:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Animation */
+@keyframes seo-simple-spin {
+	0% { transform: rotate( 0deg ); }
+	100% { transform: rotate( 360deg ); }
+}
+
+.seo-simple-spinning {
+	animation: seo-simple-spin 1s linear infinite;
+}
+
+/* Dark Mode Support */
+.is-dark-theme .seo-simple-preview {
+	background: #2a2a2a;
+	border-color: #3a3a3a;
+}
+
+.is-dark-theme .seo-simple-analysis-item {
+	background: #2a2a2a;
+}
+
+.is-dark-theme .seo-simple-readability-score,
+.is-dark-theme .seo-simple-seo-score {
+	background: #2a2a2a;
+}

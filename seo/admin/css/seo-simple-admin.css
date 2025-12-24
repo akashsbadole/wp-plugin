@@ -1,0 +1,1048 @@
+/**
+ * Admin CSS for SEO Simple plugin.
+ */
+
+/* Settings Page Styles */
+.seo-simple-settings {
+	max-width: 1200px;
+}
+
+.seo-simple-settings .nav-tab-wrapper {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.seo-simple-settings .nav-tab {
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+	margin: 0 5px -1px 0;
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	background: #f1f1f1;
+	color: #555;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: all 0.2s ease;
+}
+
+.seo-simple-settings .nav-tab:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+.seo-simple-settings .nav-tab-active {
+	color: #333;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.seo-simple-settings .tab-content {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 0 0 3px 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.seo-simple-settings .tab-pane {
+	display: none;
+}
+
+.seo-simple-settings .tab-pane.active {
+	display: block;
+}
+
+/* Form Styles */
+.seo-simple-settings .form-table th {
+	font-weight: 600;
+	width: 200px;
+}
+
+.seo-simple-settings .regular-text {
+	width: 400px;
+	max-width: 100%;
+}
+
+.seo-simple-settings .large-text {
+	width: 600px;
+	max-width: 100%;
+}
+
+.seo-simple-settings .small-text {
+	width: 80px;
+}
+
+.seo-simple-settings .description {
+	color: #666;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+/* Image Field Styles */
+.seo-simple-settings .image-field-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.seo-simple-settings .image-field-container .image-url {
+	flex: 1;
+}
+
+.seo-simple-settings .image-field-container .image-upload-button {
+	flex-shrink: 0;
+}
+
+.seo-simple-settings .image-preview {
+	margin-top: 10px;
+}
+
+.seo-simple-settings .image-preview img {
+	max-width: 100px;
+	max-height: 100px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	background: #f9f9f9;
+}
+
+/* Dashboard Styles */
+.seo-simple-dashboard .dashboard-widgets-wrap {
+	margin-top: 20px;
+}
+
+.seo-simple-dashboard .postbox-container {
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+
+.seo-simple-dashboard .postbox {
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+.seo-simple-dashboard .postbox .hndle {
+	padding: 8px 12px;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	border-bottom: 1px solid #ccd0d4;
+	background: #f1f1f1;
+}
+
+.seo-simple-dashboard .postbox .inside {
+	padding: 12px;
+}
+
+.seo-simple-dashboard .postbox ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.seo-simple-dashboard .postbox li {
+	margin-bottom: 8px;
+}
+
+.seo-simple-dashboard .postbox ol {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.seo-simple-dashboard .postbox ol li {
+	margin-bottom: 8px;
+}
+
+/* Button Styles */
+.seo-simple-settings .button.copy-sitemap-url,
+.seo-simple-settings .button.regenerate-sitemap,
+.seo-simple-settings .button.export-settings,
+.seo-simple-settings .button.import-settings,
+.seo-simple-settings .button.reset-settings {
+	margin-right: 10px;
+}
+
+.seo-simple-dashboard .button {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 782px) {
+	.seo-simple-settings .form-table th {
+		width: auto;
+		padding: 10px 10px 10px 0;
+	}
+	
+	.seo-simple-settings .regular-text,
+	.seo-simple-settings .large-text {
+		width: 100%;
+	}
+	
+	.seo-simple-dashboard .postbox-container {
+		width: 100% !important;
+		padding-right: 0;
+	}
+	
+	.seo-simple-settings .image-field-container {
+		flex-direction: column;
+	}
+}
+
+/* Meta Box Styles */
+.seo-simple-meta-box .inside {
+	padding: 12px;
+}
+
+.seo-simple-meta-box .tab-wrapper {
+	margin-bottom: 15px;
+}
+
+.seo-simple-meta-box .tab-wrapper .tab-button {
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 8px 12px;
+	margin-right: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.seo-simple-meta-box .tab-wrapper .tab-button.active {
+	background: #fff;
+	color: #333;
+	border-bottom: 1px solid #fff;
+	position: relative;
+}
+
+.seo-simple-meta-box .tab-content {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 15px;
+}
+
+.seo-simple-meta-box .tab-pane {
+	display: none;
+}
+
+.seo-simple-meta-box .tab-pane.active {
+	display: block;
+}
+
+.seo-simple-meta-box .form-field {
+	margin-bottom: 15px;
+}
+
+.seo-simple-meta-box .form-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-meta-box .form-field input[type="text"],
+.seo-simple-meta-box .form-field textarea {
+	width: 100%;
+}
+
+.seo-simple-meta-box .form-field .description {
+	font-size: 12px;
+	color: #666;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+/* Analysis Results Styles */
+.seo-simple-analysis {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.seo-simple-analysis .analysis-item {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.seo-simple-analysis .analysis-item:last-child {
+	margin-bottom: 0;
+}
+
+.seo-simple-analysis .analysis-indicator {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.seo-simple-analysis .analysis-indicator.good {
+	background-color: #46b450;
+}
+
+.seo-simple-analysis .analysis-indicator.ok {
+	background-color: #ffb900;
+}
+
+.seo-simple-analysis .analysis-indicator.bad {
+	background-color: #dc3232;
+}
+
+.seo-simple-analysis .analysis-text {
+	flex: 1;
+}
+
+.seo-simple-analysis .analysis-score {
+	font-weight: 600;
+}
+
+/* Score Display Styles */
+.seo-simple-score {
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.seo-simple-score.good {
+	background-color: #46b450;
+}
+
+.seo-simple-score.ok {
+	background-color: #ffb900;
+}
+
+.seo-simple-score.bad {
+	background-color: #dc3232;
+}
+
+/* Character Count Styles */
+.seo-simple-char-count {
+	font-size: 12px;
+	color: #666;
+	margin-top: 5px;
+}
+
+.seo-simple-char-count.good {
+	color: #46b450;
+}
+
+.seo-simple-char-count.warning {
+	color: #ffb900;
+}
+
+.seo-simple-char-count.bad {
+	color: #dc3232;
+}
+
+/* Focus Keyword Styles */
+.seo-simple-focus-keyword {
+	border: 1px solid #ddd;
+	padding: 8px;
+	margin-bottom: 10px;
+	background: #f9f9f9;
+}
+
+.seo-simple-focus-keyword .keyword {
+	font-weight: 600;
+	color: #333;
+}
+
+.seo-simple-focus-keyword .density {
+	color: #666;
+	margin-left: 10px;
+}
+
+/* Social Preview Styles */
+.seo-simple-social-preview {
+	border: 1px solid #ddd;
+	background: #fff;
+	margin: 10px 0;
+}
+
+.seo-simple-social-preview .preview-title {
+	font-weight: 600;
+	padding: 8px;
+	background: #f1f1f1;
+	border-bottom: 1px solid #ddd;
+}
+
+.seo-simple-social-preview .preview-content {
+	padding: 10px;
+}
+
+.seo-simple-social-preview .google-preview {
+	max-width: 600px;
+}
+
+.seo-simple-social-preview .google-preview .title {
+	color: #1a0dab;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.seo-simple-social-preview .google-preview .url {
+	color: #006621;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.seo-simple-social-preview .google-preview .description {
+	color: #545454;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.seo-simple-social-preview .facebook-preview {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.seo-simple-social-preview .facebook-preview .image {
+	width: 100%;
+	height: auto;
+}
+
+.seo-simple-social-preview .facebook-preview .content {
+	padding: 10px;
+}
+
+.seo-simple-social-preview .facebook-preview .title {
+	color: #1d2129;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-social-preview .facebook-preview .description {
+	color: #606770;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+.seo-simple-social-preview .twitter-preview {
+	border: 1px solid #e1e8ed;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.seo-simple-social-preview .twitter-preview .image {
+	width: 100%;
+	height: auto;
+}
+
+.seo-simple-social-preview .twitter-preview .content {
+	padding: 10px;
+}
+
+.seo-simple-social-preview .twitter-preview .title {
+	color: #14171a;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.seo-simple-social-preview .twitter-preview .description {
+	color: #657786;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/* Dashboard Widget Styles */
+.seo-simple-dashboard-widget {
+	padding: 12px;
+}
+
+.seo-simple-stats-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+	margin-bottom: 20px;
+}
+
+.seo-simple-stat-item {
+	text-align: center;
+	padding: 10px;
+	background: #f9f9f9;
+	border-radius: 4px;
+}
+
+.seo-simple-stat-number {
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	display: block;
+}
+
+.seo-simple-stat-label {
+	font-size: 12px;
+	color: #666;
+	text-transform: uppercase;
+	margin-top: 4px;
+}
+
+.seo-simple-seo-health {
+	margin-bottom: 20px;
+}
+
+.seo-simple-seo-health h4,
+.seo-simple-missing-meta h4,
+.seo-simple-needs-improvement h4 {
+	margin: 0 0 8px 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.seo-simple-health-bar {
+	height: 8px;
+	background: #e1e1e1;
+	border-radius: 4px;
+	margin-bottom: 6px;
+	overflow: hidden;
+}
+
+.seo-simple-health-fill {
+	height: 100%;
+	transition: width 0.3s ease;
+}
+
+.seo-simple-health-fill.seo-simple-good {
+	background-color: #46b450;
+}
+
+.seo-simple-health-fill.seo-simple-ok {
+	background-color: #ffb900;
+}
+
+.seo-simple-health-fill.seo-simple-bad {
+	background-color: #dc3232;
+}
+
+.seo-simple-health-text {
+	font-size: 12px;
+	color: #666;
+}
+
+.seo-simple-meta-issues {
+	margin-bottom: 20px;
+}
+
+.seo-simple-meta-issue {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.seo-simple-issue-label {
+	font-size: 12px;
+	color: #333;
+}
+
+.seo-simple-issue-count {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.seo-simple-issue-count.seo-simple-good {
+	color: #46b450;
+}
+
+.seo-simple-issue-count.seo-simple-ok {
+	color: #ffb900;
+}
+
+.seo-simple-issue-count.seo-simple-bad {
+	color: #dc3232;
+}
+
+.seo-simple-posts-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.seo-simple-post-item {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.seo-simple-post-item:last-child {
+	border-bottom: none;
+}
+
+.seo-simple-post-title a {
+	display: block;
+	font-size: 13px;
+	color: #0073aa;
+	text-decoration: none;
+}
+
+.seo-simple-post-title a:hover {
+	text-decoration: underline;
+}
+
+.seo-simple-post-issues {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 4px;
+}
+
+.seo-simple-issues-text {
+	font-size: 11px;
+	color: #666;
+}
+
+.seo-simple-score {
+	font-size: 11px;
+	font-weight: bold;
+	padding: 2px 4px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.seo-simple-score.seo-simple-good {
+	background-color: #46b450;
+}
+
+.seo-simple-score.seo-simple-ok {
+	background-color: #ffb900;
+}
+
+.seo-simple-score.seo-simple-bad {
+	background-color: #dc3232;
+}
+
+.seo-simple-dashboard-actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.seo-simple-dashboard-actions .button {
+	font-size: 12px;
+	padding: 0 8px;
+	height: 28px;
+	line-height: 26px;
+}
+
+.seo-simple-refresh-widget {
+	position: relative;
+}
+
+.seo-simple-refresh-widget.seo-simple-loading::after {
+	content: "";
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	border: 2px solid #f3f3f3;
+	border-top: 2px solid #0073aa;
+	border-radius: 50%;
+	animation: seo-simple-spin 1s linear infinite;
+}
+
+@keyframes seo-simple-spin {
+	0% { transform: translateY(-50%) rotate(0deg); }
+	100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* Bulk Editor Styles */
+.seo-simple-bulk-editor {
+	margin: 20px 0;
+}
+
+.seo-simple-bulk-filters {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+.seo-simple-filter-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-bottom: 10px;
+}
+
+.seo-simple-filter-row:last-child {
+	margin-bottom: 0;
+}
+
+.seo-simple-filter-group {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.seo-simple-filter-group label {
+	font-weight: 600;
+}
+
+.seo-simple-filter-actions {
+	margin-left: auto;
+}
+
+.seo-simple-bulk-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.seo-simple-bulk-actions-left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.seo-simple-bulk-status {
+	font-size: 12px;
+	color: #666;
+	font-style: italic;
+}
+
+.seo-simple-bulk-table-wrapper {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.seo-simple-bulk-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.seo-simple-bulk-table th {
+	font-weight: 600;
+}
+
+.seo-simple-bulk-table td,
+.seo-simple-bulk-table th {
+	padding: 12px;
+	vertical-align: top;
+}
+
+.seo-simple-no-posts {
+	text-align: center;
+	padding: 40px !important;
+	color: #666;
+}
+
+.seo-simple-post-actions {
+	margin-top: 5px;
+}
+
+.seo-simple-view-link {
+	font-size: 12px;
+	color: #666;
+	text-decoration: none;
+}
+
+.seo-simple-view-link:hover {
+	text-decoration: underline;
+}
+
+.seo-simple-field-group {
+	position: relative;
+}
+
+.seo-simple-field {
+	width: 100%;
+	max-width: 300px;
+}
+
+.seo-simple-title-field,
+.seo-simple-keyword-field {
+	padding: 6px 8px;
+}
+
+.seo-simple-description-field {
+	width: 100%;
+	max-width: 400px;
+	height: 60px;
+	resize: vertical;
+	padding: 6px 8px;
+}
+
+.seo-simple-char-count {
+	font-size: 11px;
+	color: #666;
+	margin-top: 3px;
+}
+
+.seo-simple-char-count .seo-simple-length {
+	font-weight: bold;
+}
+
+.seo-simple-char-count .seo-simple-length.warning {
+	color: #ffb900;
+}
+
+.seo-simple-char-count .seo-simple-length.error {
+	color: #dc3232;
+}
+
+.seo-simple-generate-title,
+.seo-simple-generate-description {
+	margin-top: 5px;
+	font-size: 11px;
+}
+
+.seo-simple-technical-fields label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+
+.seo-simple-technical-fields label:last-child {
+	margin-bottom: 0;
+}
+
+.seo-simple-field-actions {
+	white-space: nowrap;
+}
+
+.seo-simple-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.seo-simple-pagination-info {
+	font-size: 14px;
+	color: #666;
+}
+
+/* Bulk Editor Responsive Styles */
+@media screen and (max-width: 1200px) {
+	.seo-simple-filter-row {
+		gap: 10px;
+	}
+	
+	.seo-simple-field {
+		max-width: 250px;
+	}
+	
+	.seo-simple-description-field {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	.seo-simple-stats-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.seo-simple-dashboard-actions {
+		flex-direction: column;
+	}
+	
+	.seo-simple-dashboard-actions .button {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.seo-simple-filter-row {
+		flex-direction: column;
+		gap: 15px;
+	}
+	
+	.seo-simple-filter-group {
+		width: 100%;
+		justify-content: flex-start;
+	}
+	
+	.seo-simple-filter-group label {
+		display: block;
+		width: 100%;
+	}
+	
+	.seo-simple-filter-group input[type="text"],
+	.seo-simple-filter-group select {
+		width: 100%;
+		margin-top: 5px;
+	}
+	
+	.seo-simple-bulk-actions {
+		flex-direction: column;
+		gap: 10px;
+		align-items: stretch;
+	}
+	
+	.seo-simple-bulk-table th,
+	.seo-simple-bulk-table td {
+		padding: 8px;
+	}
+	
+	.seo-simple-field,
+	.seo-simple-description-field {
+		max-width: 100%;
+	}
+}
+
+/* Code Snippets Styles */
+.seo-simple-code-snippets-header {
+	margin-bottom: 20px;
+}
+
+.seo-simple-code-snippets-quick-add {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+}
+
+.seo-simple-code-snippets-quick-add h3 {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.seo-simple-code-snippets-quick-add p {
+	margin: 0 0 15px 0;
+	color: #666;
+	font-size: 13px;
+}
+
+.seo-simple-code-snippets-quick-add .quick-add-buttons {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.seo-simple-code-snippets-container {
+	margin-bottom: 20px;
+}
+
+.seo-simple-code-snippets-container .wp-list-table {
+	border: 1px solid #ccd0d4;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.seo-simple-code-snippets-container .column-name {
+	width: 30%;
+}
+
+.seo-simple-code-snippets-container .column-location {
+	width: 15%;
+}
+
+.seo-simple-code-snippets-container .column-status {
+	width: 15%;
+}
+
+.seo-simple-code-snippets-container .column-priority {
+	width: 10%;
+}
+
+.seo-simple-code-snippets-container .column-date {
+	width: 15%;
+}
+
+.seo-simple-code-snippets-container .column-actions {
+	width: 15%;
+}
+
+.seo-simple-code-snippets-container .status-active {
+	color: #46b450;
+	font-weight: 600;
+}
+
+.seo-simple-code-snippets-container .status-inactive {
+	color: #dc3232;
+	font-weight: 600;
+}
+
+.seo-simple-code-snippets-form-actions {
+	margin-top: 20px;
+	padding-top: 15px;
+	border-top: 1px solid #ddd;
+}
+
+.seo-simple-code-snippets-help {
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	padding: 15px;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+
+.seo-simple-code-snippets-help h3 {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	color: #333;
+}
+
+.seo-simple-code-snippets-help h4 {
+	margin: 15px 0 5px 0;
+	font-size: 13px;
+	color: #333;
+}
+
+.seo-simple-code-snippets-help p {
+	margin: 0 0 10px 0;
+	color: #666;
+	font-size: 13px;
+}
+
+.seo-simple-code-snippets-help ul {
+	margin: 0 0 0 20px;
+	padding: 0;
+}
+
+.seo-simple-code-snippets-help li {
+	margin-bottom: 5px;
+	color: #666;
+	font-size: 13px;
+}
+
+.seo-simple-code-snippets-help pre {
+	background: #f1f1f1;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 3px;
+	overflow: auto;
+	font-size: 12px;
+}
+
+.seo-simple-code-snippets-help code {
+	font-family: Consolas, Monaco, monospace;
+}
+
+/* Code Snippets Responsive Styles */
+@media screen and (max-width: 782px) {
+	.seo-simple-code-snippets-quick-add .quick-add-buttons {
+		flex-direction: column;
+	}
+	
+	.seo-simple-code-snippets-container .column-name,
+	.seo-simple-code-snippets-container .column-location,
+	.seo-simple-code-snippets-container .column-status,
+	.seo-simple-code-snippets-container .column-priority,
+	.seo-simple-code-snippets-container .column-date,
+	.seo-simple-code-snippets-container .column-actions {
+		width: auto;
+		display: block;
+	}
+}

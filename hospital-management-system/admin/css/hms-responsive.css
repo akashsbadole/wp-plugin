@@ -1,0 +1,622 @@
+/**
+ * HMS Responsive Design & Accessibility Enhancements
+ * 
+ * Provides responsive design and accessibility improvements
+ * for all HMS admin pages following WCAG 2.1 guidelines.
+ * 
+ * @package Hospital_Management_System
+ * @subpackage Admin/CSS
+ * @version 1.0.0
+ */
+
+/* ==========================================================================
+   RESPONSIVE DESIGN ENHANCEMENTS
+   ========================================================================== */
+
+/* Mobile-First Approach */
+@media (max-width: 480px) {
+
+    /* Extra small devices */
+    .hms-wrap {
+        padding: 10px;
+    }
+
+    .hms-card {
+        margin-bottom: 15px;
+    }
+
+    .hms-card-body {
+        padding: 15px;
+    }
+
+    .hms-btn {
+        padding: 12px 16px;
+        font-size: 16px;
+        min-height: 44px;
+        /* Touch target size */
+    }
+
+    .hms-btn-sm {
+        padding: 10px 14px;
+        font-size: 14px;
+        min-height: 40px;
+    }
+
+    /* Stack form elements vertically */
+    .hms-form-group {
+        margin-bottom: 15px;
+    }
+
+    .hms-row {
+        margin: 0 -5px;
+    }
+
+    .hms-col {
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Make tables horizontally scrollable */
+    .hms-table-responsive {
+        border: 1px solid #c3c4c7;
+        border-radius: 4px;
+    }
+
+    .hms-table {
+        font-size: 14px;
+        min-width: 600px;
+        /* Ensure minimum width for readability */
+    }
+
+    .hms-table th,
+    .hms-table td {
+        padding: 8px 6px;
+        white-space: nowrap;
+    }
+
+    /* Metric cards stack vertically */
+    .hms-metric-card {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    /* Modal adjustments */
+    .hms-modal-dialog {
+        margin: 10px;
+        max-width: calc(100vw - 20px);
+    }
+
+    .hms-modal-header,
+    .hms-modal-body,
+    .hms-modal-footer {
+        padding: 15px;
+    }
+
+    /* Breadcrumb adjustments */
+    .hms-breadcrumb {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .hms-breadcrumb-item+.hms-breadcrumb-item::before {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Small devices */
+    .hms-page-header h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .page-title-action {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    /* Form improvements */
+    .hms-input,
+    .hms-select,
+    .hms-textarea {
+        font-size: 16px;
+        /* Prevent zoom on iOS */
+        padding: 12px;
+    }
+
+    /* Button groups stack vertically */
+    .hms-btn-group {
+        flex-direction: column;
+    }
+
+    .hms-btn-group .hms-btn {
+        border-radius: 4px;
+        margin: 2px 0;
+        width: 100%;
+    }
+
+    /* Action buttons in tables */
+    .hms-action-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hms-action-buttons .hms-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Dashboard adjustments */
+    .hms-dashboard-page .hms-row {
+        flex-direction: column;
+    }
+
+    .hms-dashboard-page .hms-col-4 {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 782px) {
+
+    /* WordPress admin bar breakpoint */
+    .hms-wrap {
+        margin-top: 0;
+    }
+
+    /* Adjust for WordPress mobile menu */
+    .hms-page-header {
+        margin-top: 10px;
+    }
+
+    /* Form layout adjustments */
+    .hms-form-section {
+        padding: 15px;
+    }
+
+    /* Table controls stack */
+    .hms-table-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hms-table-length,
+    .hms-table-search {
+        width: 100%;
+    }
+
+    .hms-table-length label,
+    .hms-table-search label {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* DataTables pagination */
+    .dataTables_paginate {
+        text-align: center;
+    }
+
+    .dataTables_paginate .paginate_button {
+        margin: 2px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width: 783px) and (max-width: 1024px) {
+
+    /* Tablet devices */
+    .hms-col-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hms-col-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .hms-col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* Desktop devices */
+    .hms-container {
+        max-width: 1200px;
+    }
+
+    /* Larger touch targets for desktop */
+    .hms-btn {
+        min-height: 36px;
+    }
+
+    .hms-btn-sm {
+        min-height: 32px;
+    }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================================================== */
+
+/* Focus Management */
+*:focus {
+    outline: 2px solid #2271b1;
+    outline-offset: 2px;
+}
+
+.hms-btn:focus,
+.hms-input:focus,
+.hms-select:focus,
+.hms-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #2271b1;
+    border-color: #2271b1;
+}
+
+/* Skip Links */
+.hms-skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #2271b1;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 100000;
+    transition: top 0.3s;
+}
+
+.hms-skip-link:focus {
+    top: 0;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Screen Reader Only Content */
+.hms-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.hms-sr-only:focus {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    padding: inherit !important;
+    margin: inherit !important;
+    overflow: visible !important;
+    clip: auto !important;
+    white-space: normal !important;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .hms-card {
+        border: 2px solid #000;
+    }
+
+    .hms-btn {
+        border: 2px solid;
+    }
+
+    .hms-input,
+    .hms-select,
+    .hms-textarea {
+        border: 2px solid #000;
+    }
+
+    .hms-table th,
+    .hms-table td {
+        border: 1px solid #000;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .hms-loading-spinner {
+        animation: none;
+    }
+
+    .hms-loading-spinner::after {
+        content: "Loading...";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Color Contrast Improvements */
+.hms-text-muted {
+    color: #646970 !important;
+    font-weight: 500;
+    /* Improve readability */
+}
+
+.hms-badge {
+    font-weight: 600;
+    border: 1px solid transparent;
+}
+
+.hms-badge-light {
+    color: #1d2327 !important;
+    background-color: #f6f7f7 !important;
+    border-color: #c3c4c7 !important;
+}
+
+/* Form Validation Accessibility */
+.hms-form-group.has-error .hms-input,
+.hms-form-group.has-error .hms-select,
+.hms-form-group.has-error .hms-textarea {
+    border-color: #d63638;
+    background-color: #fcf0f1;
+}
+
+.hms-error-message {
+    color: #d63638;
+    font-weight: 600;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.hms-error-message::before {
+    content: "⚠";
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/* Loading States Accessibility */
+.hms-loading {
+    position: relative;
+}
+
+.hms-loading::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.hms-loading[aria-label]::after {
+    content: attr(aria-label);
+    font-weight: 600;
+    color: #1d2327;
+}
+
+/* Modal Accessibility */
+.hms-modal[aria-hidden="true"] {
+    display: none;
+}
+
+.hms-modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.hms-modal-content {
+    position: relative;
+}
+
+.hms-modal-content:focus {
+    outline: none;
+}
+
+/* Table Accessibility */
+.hms-table caption {
+    padding: 10px;
+    font-weight: 600;
+    text-align: left;
+    background: #f6f7f7;
+    border: 1px solid #c3c4c7;
+    border-bottom: none;
+}
+
+.hms-table th {
+    text-align: left;
+}
+
+.hms-table th[aria-sort] {
+    cursor: pointer;
+    position: relative;
+}
+
+.hms-table th[aria-sort]::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+}
+
+.hms-table th[aria-sort="ascending"]::after {
+    border-bottom-color: #1d2327;
+}
+
+.hms-table th[aria-sort="descending"]::after {
+    border-top-color: #1d2327;
+}
+
+/* Notification Accessibility */
+.hms-notice {
+    position: relative;
+    padding-left: 50px;
+}
+
+.hms-notice::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hms-notice-success::before {
+    content: "✓";
+    color: #00a32a;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hms-notice-warning::before {
+    content: "⚠";
+    color: #dba617;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hms-notice-error::before {
+    content: "✕";
+    color: #d63638;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hms-notice-info::before {
+    content: "ℹ";
+    color: #72aee6;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Keyboard Navigation Improvements */
+.hms-btn-group .hms-btn:focus {
+    z-index: 1;
+    position: relative;
+}
+
+.hms-table tbody tr:focus-within {
+    background-color: rgba(34, 113, 177, 0.1);
+}
+
+/* Touch Device Improvements */
+@media (pointer: coarse) {
+    .hms-btn {
+        min-height: 44px;
+        padding: 12px 16px;
+    }
+
+    .hms-btn-sm {
+        min-height: 40px;
+        padding: 10px 14px;
+    }
+
+    .hms-input,
+    .hms-select,
+    .hms-textarea {
+        min-height: 44px;
+        padding: 12px;
+    }
+
+    .hms-table th,
+    .hms-table td {
+        padding: 12px 8px;
+    }
+
+    /* Increase tap targets for action buttons */
+    .hms-action-buttons .hms-btn {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Print Accessibility */
+@media print {
+
+    .hms-skip-link,
+    .hms-btn,
+    .hms-modal,
+    .hms-notice-dismiss,
+    .hms-loading-spinner {
+        display: none !important;
+    }
+
+    .hms-wrap {
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    .hms-card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+
+    .hms-table {
+        border-collapse: collapse !important;
+    }
+
+    .hms-table th,
+    .hms-table td {
+        border: 1px solid #000 !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .hms-page-header h1 {
+        font-size: 18pt !important;
+        margin-bottom: 12pt !important;
+    }
+
+    .hms-breadcrumb {
+        font-size: 10pt !important;
+        margin-bottom: 12pt !important;
+    }
+}
+
+/* Dark Mode Support (if WordPress adds support) */
+@media (prefers-color-scheme: dark) {
+    .hms-wrap {
+        /* Will be implemented when WordPress adds dark mode support */
+    }
+}

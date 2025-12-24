@@ -1,0 +1,455 @@
+/**
+ * Enhanced Schema Admin Styles
+ *
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/admin/css
+ */
+
+.seo-simple-meta-box .seo-simple-field {
+    margin-bottom: 15px;
+}
+
+.seo-simple-meta-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.seo-simple-meta-box .description {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0 0 0;
+}
+
+.seo-simple-schema-actions {
+    margin-top: 10px;
+}
+
+.seo-simple-schema-validation-result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.seo-simple-schema-validation-result.success {
+    background-color: #f7f9f7;
+    border: 1px solid #46b450;
+    color: #46b450;
+}
+
+.seo-simple-schema-validation-result.error {
+    background-color: #f7f6f6;
+    border: 1px solid #dc3232;
+    color: #dc3232;
+}
+
+.seo-simple-schema-fields-container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.seo-simple-schema-fields-container .seo-simple-field {
+    margin-bottom: 10px;
+}
+
+.seo-simple-schema-fields-container .seo-simple-field:last-child {
+    margin-bottom: 0;
+}
+
+.seo-simple-schema-preview {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
+}
+
+.seo-simple-schema-preview pre {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 300px;
+    font-size: 12px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group .seo-simple-field {
+    margin-bottom: 10px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group .seo-simple-field:last-child {
+    margin-bottom: 0;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-help {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-row {
+    display: flex;
+    gap: 15px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-row .seo-simple-field {
+    flex: 1;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-half {
+    width: 50%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-third {
+    width: 33.33%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-quarter {
+    width: 25%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-media-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-media-uploader {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-date-picker {
+    width: 150px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-time-picker {
+    width: 100px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-number-input {
+    width: 100px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-currency-input {
+    width: 80px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-url-input {
+    width: 100%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-textarea {
+    width: 100%;
+    min-height: 100px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-select {
+    width: 100%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-checkbox {
+    margin-right: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-checkbox-label {
+    font-weight: normal;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-radio {
+    margin-right: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-radio-label {
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-required {
+    color: #dc3232;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-optional {
+    color: #666;
+    font-size: 12px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-error {
+    color: #dc3232;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-success {
+    color: #46b450;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-warning {
+    color: #ffb900;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-info {
+    color: #00a0d2;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group-toggle {
+    cursor: pointer;
+    font-size: 12px;
+    color: #0073aa;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group-toggle:hover {
+    color: #005a87;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group.collapsed .seo-simple-field-group-content {
+    display: none;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group.collapsed .seo-simple-field-group-toggle::before {
+    content: '\f140';
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group:not(.collapsed) .seo-simple-field-group-toggle::before {
+    content: '\f142';
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-group-toggle::before {
+    font-family: dashicons;
+    margin-right: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tab:hover {
+    background-color: #f9f9f9;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tab.active {
+    border-bottom-color: #0073aa;
+    color: #0073aa;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tab-content {
+    display: none;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-tab-content.active {
+    display: block;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater-item {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater-item:last-child {
+    margin-bottom: 0;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #dc3232;
+    cursor: pointer;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater-remove:hover {
+    color: #a00;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-repeater-add {
+    margin-top: 10px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-color {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-range {
+    width: 100%;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field-range-value {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .seo-simple-schema-enhanced-tab .seo-simple-field-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .seo-simple-schema-enhanced-tab .seo-simple-field-half,
+    .seo-simple-schema-enhanced-tab .seo-simple-field-third,
+    .seo-simple-schema-enhanced-tab .seo-simple-field-quarter {
+        width: 100%;
+    }
+    
+    .seo-simple-schema-enhanced-tab .seo-simple-field-tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .seo-simple-schema-enhanced-tab .seo-simple-field-tab {
+        border-bottom: 1px solid #ddd;
+        border-left: 2px solid transparent;
+    }
+    
+    .seo-simple-schema-enhanced-tab .seo-simple-field-tab.active {
+        border-left-color: #0073aa;
+        border-bottom-color: #ddd;
+    }
+}
+
+/* Loading spinner styles */
+.seo-simple-schema-fields-container .spinner {
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.seo-simple-schema-spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.seo-simple-preview-spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Button styles */
+.seo-simple-validate-schema-button,
+.seo-simple-preview-schema-button {
+    margin-right: 10px;
+}
+
+/* Form validation styles */
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-error input,
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-error select,
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-error textarea {
+    border-color: #dc3232;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-success input,
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-success select,
+.seo-simple-schema-enhanced-tab .seo-simple-field.has-success textarea {
+    border-color: #46b450;
+}
+
+/* Tooltip styles */
+.seo-simple-schema-enhanced-tab .seo-simple-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-tooltip::before {
+    content: '\f223';
+    font-family: dashicons;
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-tooltip .seo-simple-tooltip-content {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-tooltip:hover .seo-simple-tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.seo-simple-schema-enhanced-tab .seo-simple-tooltip .seo-simple-tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}

@@ -1,0 +1,132 @@
+.social-share-buttons {
+    display: flex;
+    gap: 12px;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.social-share-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+    background: #f5f5f5;
+}
+
+.social-share-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+.social-share-buttons svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Platform-specific colors */
+.social-share-buttons a.ssb-facebook:hover { background: #1877f2; }
+.social-share-buttons a.ssb-twitter:hover { background: #1da1f2; }
+.social-share-buttons a.ssb-linkedin:hover { background: #0a66c2; }
+.social-share-buttons a.ssb-pinterest:hover { background: #bd081c; }
+.social-share-buttons a.ssb-whatsapp:hover { background: #25d366; }
+
+.social-share-buttons a:hover svg path[fill="#fff"] {
+    fill: #fff;
+}
+
+.ess-social-share {
+    margin: 20px 0;
+}
+
+.ess-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ess-buttons li {
+    margin: 0;
+    padding: 0;
+}
+
+.ess-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.ess-buttons a:hover {
+    opacity: 0.9;
+    box-shadow: none;
+}
+
+.ess-style-icon-only .ess-buttons span {
+    display: none;
+}
+
+/* Button sizes */
+.ess-size-small .ess-buttons a {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
+.ess-size-medium .ess-buttons a {
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.ess-size-large .ess-buttons a {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+/* Button shapes */
+.ess-shape-square .ess-buttons a {
+    border-radius: 0;
+}
+
+.ess-shape-rounded .ess-buttons a {
+    border-radius: 4px;
+}
+
+.ess-shape-circle .ess-buttons a {
+    border-radius: 50%;
+}
+
+/* Button colors */
+.ess-facebook a {
+    background-color: #1877f2;
+}
+
+.ess-twitter a {
+    background-color: #1da1f2;
+}
+
+.ess-linkedin a {
+    background-color: #0a66c2;
+}
+
+.ess-pinterest a {
+    background-color: #bd081c;
+}
+
+.ess-whatsapp a {
+    background-color: #25d366;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .ess-buttons {
+        flex-direction: column;
+    }
+}

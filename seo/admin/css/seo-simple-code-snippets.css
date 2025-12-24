@@ -1,0 +1,141 @@
+/* SEO Simple Code Snippets Admin Styles */
+
+.seo-simple-code-snippets-header {
+    margin: 20px 0;
+}
+
+.seo-simple-code-snippets-quick-add {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.seo-simple-code-snippets-quick-add h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #23282d;
+}
+
+.seo-simple-code-snippets-quick-add p {
+    margin: 0 0 15px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.quick-add-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.quick-add-buttons .button {
+    text-decoration: none;
+    height: auto;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.seo-simple-code-snippets-container {
+    margin-top: 20px;
+}
+
+.seo-simple-code-snippets-container .wp-list-table {
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.seo-simple-code-snippets-container th {
+    font-weight: 600;
+}
+
+.status-active {
+    color: #00a32a;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #d63638;
+    font-weight: 600;
+}
+
+.seo-simple-code-snippets-help {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.seo-simple-code-snippets-help h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #23282d;
+}
+
+.seo-simple-code-snippets-help h4 {
+    margin: 20px 0 10px 0;
+    font-size: 13px;
+    color: #23282d;
+}
+
+.seo-simple-code-snippets-help p {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.seo-simple-code-snippets-help ul {
+    margin: 0 0 0 20px;
+}
+
+.seo-simple-code-snippets-help li {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #666;
+}
+
+.seo-simple-code-snippets-help pre {
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow-x: auto;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.seo-simple-code-snippets-help code {
+    font-family: Consolas, Monaco, monospace;
+}
+
+.seo-simple-code-snippets-form-actions {
+    margin: 20px 0;
+}
+
+/* Form validation styles */
+.form-table input[type="text"].error,
+.form-table textarea.error {
+    border-color: #d63638;
+    box-shadow: 0 0 0 1px #d63638;
+}
+
+.form-table .error-message {
+    color: #d63638;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .quick-add-buttons {
+        flex-direction: column;
+    }
+    
+    .quick-add-buttons .button {
+        width: 100%;
+        text-align: center;
+    }
+}

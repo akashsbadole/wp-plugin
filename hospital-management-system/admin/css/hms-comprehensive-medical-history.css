@@ -1,0 +1,1020 @@
+/**
+ * Comprehensive Medical History Styles
+ * 
+ * Styles for the enhanced medical history interface with advanced search,
+ * filtering, timeline display, and inline editing capabilities.
+ *
+ * @package    Hospital_Management_System
+ * @subpackage Hospital_Management_System/admin/css
+ * @author     HMS Development Team
+ * @since      1.0.0
+ */
+
+/* ==========================================================================
+   Patient Summary Card
+   ========================================================================== */
+
+.hms-patient-summary-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hms-patient-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hms-patient-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hms-patient-details h2 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 24px;
+}
+
+.hms-patient-meta {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: #666;
+    font-size: 14px;
+}
+
+.hms-patient-meta span {
+    padding: 4px 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.hms-patient-stats {
+    display: flex;
+    gap: 30px;
+}
+
+.hms-stat {
+    text-align: center;
+}
+
+.hms-stat-number {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2271b1;
+    line-height: 1;
+}
+
+.hms-stat-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* ==========================================================================
+   Advanced Filters Section
+   ========================================================================== */
+
+.hms-advanced-filters-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.hms-filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.hms-filters-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.hms-filters-content {
+    padding: 20px;
+}
+
+.hms-basic-search {
+    margin-bottom: 20px;
+}
+
+.hms-search-input-wrapper {
+    position: relative;
+    max-width: 600px;
+}
+
+.hms-search-input {
+    width: 100%;
+    padding: 12px 45px 12px 40px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.hms-search-input:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 3px rgba(34, 113, 177, 0.1);
+    outline: none;
+}
+
+.hms-search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 18px;
+}
+
+.hms-clear-search {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.hms-clear-search:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.hms-advanced-filters-panel {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.hms-filter-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.hms-filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.hms-filter-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 14px;
+}
+
+.hms-filter-group input,
+.hms-filter-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.hms-filter-group input:focus,
+.hms-filter-group select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.hms-filter-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.hms-filter-status {
+    padding: 15px 20px;
+    background: #f0f6fc;
+    border-top: 1px solid #ddd;
+    color: #0073aa;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   Medical Records Timeline
+   ========================================================================== */
+
+.hms-medical-records-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.hms-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.hms-section-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.hms-timeline-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.hms-enhanced-timeline {
+    padding: 30px 20px;
+    position: relative;
+}
+
+.hms-timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.hms-timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.hms-timeline-connector {
+    flex-shrink: 0;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.hms-timeline-start {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #2271b1;
+    margin-bottom: 10px;
+}
+
+.hms-timeline-marker {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.hms-timeline-marker-consultation {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hms-timeline-marker-follow_up {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.hms-timeline-marker-emergency {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+}
+
+.hms-timeline-marker-surgery {
+    background: linear-gradient(135deg, #feca57 0%, #ff9ff3 100%);
+}
+
+.hms-timeline-marker-discharge {
+    background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%);
+}
+
+.hms-timeline-line {
+    width: 3px;
+    background: linear-gradient(to bottom, #ddd 0%, #f0f0f0 100%);
+    flex-grow: 1;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.hms-timeline-content {
+    flex-grow: 1;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.hms-timeline-content:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-color: #ccc;
+}
+
+.hms-timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hms-timeline-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hms-timeline-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.hms-date-primary {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.hms-date-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.hms-record-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hms-record-badge-consultation {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+}
+
+.hms-record-badge-follow_up {
+    background: rgba(240, 147, 251, 0.1);
+    color: #f093fb;
+}
+
+.hms-record-badge-emergency {
+    background: rgba(255, 107, 107, 0.1);
+    color: #ff6b6b;
+}
+
+.hms-record-badge-surgery {
+    background: rgba(254, 202, 87, 0.1);
+    color: #feca57;
+}
+
+.hms-record-badge-discharge {
+    background: rgba(72, 219, 251, 0.1);
+    color: #48dbfb;
+}
+
+.hms-timeline-actions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.hms-timeline-summary {
+    padding: 15px 20px;
+}
+
+.hms-summary-doctor {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+}
+
+.hms-summary-diagnosis {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.hms-timeline-details {
+    border-top: 1px solid #e0e0e0;
+    background: #fafafa;
+}
+
+.hms-detail-section {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hms-detail-section:last-child {
+    border-bottom: none;
+}
+
+.hms-detail-section h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hms-detail-content {
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.hms-audit-trail {
+    background: #f0f0f0;
+}
+
+.hms-audit-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hms-audit-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hms-audit-label {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hms-audit-value {
+    font-size: 13px;
+    color: #333;
+    font-weight: 500;
+}
+
+.hms-detail-actions {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   Inline Editing
+   ========================================================================== */
+
+.hms-inline-edit-form {
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 20px;
+}
+
+.hms-quick-edit-field {
+    margin-bottom: 15px;
+}
+
+.hms-quick-edit-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.hms-quick-edit-field textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 60px;
+}
+
+.hms-quick-edit-field textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.hms-quick-edit-actions {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* ==========================================================================
+   Buttons and Controls
+   ========================================================================== */
+
+.hms-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: none;
+    line-height: 1;
+}
+
+.hms-btn:hover {
+    text-decoration: none;
+}
+
+.hms-btn-primary {
+    background: #2271b1;
+    color: white;
+    border-color: #2271b1;
+}
+
+.hms-btn-primary:hover {
+    background: #135e96;
+    border-color: #135e96;
+    color: white;
+}
+
+.hms-btn-secondary {
+    background: #f0f0f1;
+    color: #50575e;
+    border-color: #c3c4c7;
+}
+
+.hms-btn-secondary:hover {
+    background: #e0e0e1;
+    border-color: #8c8f94;
+    color: #50575e;
+}
+
+.hms-btn-ghost {
+    background: transparent;
+    color: #666;
+    border-color: transparent;
+    padding: 6px 8px;
+}
+
+.hms-btn-ghost:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.hms-btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.hms-btn-info {
+    background: #00a0d2;
+    color: white;
+    border-color: #00a0d2;
+}
+
+.hms-btn-info:hover {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: white;
+}
+
+/* ==========================================================================
+   No Results and Loading States
+   ========================================================================== */
+
+.hms-no-records {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.hms-no-records-icon {
+    font-size: 48px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.hms-no-records h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.hms-no-records p {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+.hms-loading-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: hms-spin 1s linear infinite;
+}
+
+@keyframes hms-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================================================
+   Patient Search Results
+   ========================================================================== */
+
+.hms-patient-search-container {
+    margin-bottom: 30px;
+}
+
+.hms-patient-search-results {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+}
+
+.hms-patient-search-result {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hms-patient-search-result:hover,
+.hms-patient-search-result.selected {
+    background: #f0f6fc;
+}
+
+.hms-patient-search-result:last-child {
+    border-bottom: none;
+}
+
+.hms-patient-search-result .hms-patient-info strong {
+    color: #333;
+    font-size: 14px;
+}
+
+.hms-patient-search-result .hms-patient-id {
+    color: #666;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.hms-patient-search-result .hms-patient-meta {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #888;
+}
+
+.hms-patient-search-result .hms-patient-meta span {
+    margin-right: 10px;
+}
+
+/* ==========================================================================
+   Notifications
+   ========================================================================== */
+
+.hms-notification {
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    z-index: 9999;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 300px;
+    animation: hms-slide-in 0.3s ease;
+}
+
+@keyframes hms-slide-in {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hms-notification-success {
+    background: #46b450;
+}
+
+.hms-notification-error {
+    background: #dc3232;
+}
+
+.hms-notification-warning {
+    background: #ffb900;
+}
+
+.hms-notification-info {
+    background: #00a0d2;
+}
+
+.hms-notification-message {
+    flex-grow: 1;
+}
+
+.hms-notification-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+/* ==========================================================================
+   Modal Styles
+   ========================================================================== */
+
+.hms-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hms-modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hms-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hms-modal-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.hms-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    line-height: 1;
+}
+
+.hms-modal-close:hover {
+    color: #333;
+}
+
+.hms-modal-body {
+    padding: 20px;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 1200px) {
+    .hms-patient-stats {
+        gap: 20px;
+    }
+
+    .hms-filter-row {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hms-patient-summary-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hms-patient-info {
+        width: 100%;
+    }
+
+    .hms-patient-stats {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .hms-filters-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hms-filter-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hms-filter-group {
+        min-width: auto;
+    }
+
+    .hms-filter-actions {
+        flex-direction: column;
+    }
+
+    .hms-section-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hms-timeline-item {
+        flex-direction: column;
+    }
+
+    .hms-timeline-connector {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .hms-timeline-marker {
+        margin: 0 auto;
+    }
+
+    .hms-timeline-line {
+        display: none;
+    }
+
+    .hms-timeline-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .hms-timeline-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .hms-audit-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hms-detail-actions {
+        flex-direction: column;
+    }
+
+    .hms-quick-edit-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hms-patient-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hms-patient-meta {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hms-search-input {
+        font-size: 14px;
+        padding: 10px 35px 10px 35px;
+    }
+
+    .hms-timeline-content {
+        margin: 0 -10px;
+    }
+
+    .hms-notification {
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+    }
+
+    .hms-modal {
+        padding: 10px;
+    }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+
+    .hms-filters-header,
+    .hms-filters-content,
+    .hms-timeline-actions,
+    .hms-detail-actions,
+    .hms-quick-edit-actions,
+    .hms-btn,
+    .hms-notification {
+        display: none !important;
+    }
+
+    .hms-timeline-details {
+        display: block !important;
+    }
+
+    .hms-timeline-item {
+        break-inside: avoid;
+        margin-bottom: 20px;
+    }
+
+    .hms-timeline-content {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

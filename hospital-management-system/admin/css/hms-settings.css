@@ -1,0 +1,468 @@
+/**
+ * HMS Settings Page Styles
+ * 
+ * @package Hospital_Management_System
+ * @subpackage Admin/CSS
+ */
+
+/* Settings Page Container */
+.hms-settings-page {
+    max-width: 1200px;
+}
+
+.hms-settings-page .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Tab Navigation */
+.hms-settings-tabs {
+    margin-bottom: 20px;
+}
+
+.hms-settings-tabs .nav-tab-wrapper {
+    border-bottom: 1px solid #ccd0d4;
+    margin-bottom: 0;
+}
+
+.hms-settings-tabs .nav-tab {
+    position: relative;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: #f1f1f1;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.hms-settings-tabs .nav-tab:hover {
+    background: #e8e8e8;
+    color: #2271b1;
+}
+
+.hms-settings-tabs .nav-tab.nav-tab-active {
+    background: #fff;
+    color: #2271b1;
+    border-color: #ccd0d4;
+    border-bottom-color: #fff;
+    margin-bottom: -1px;
+    font-weight: 600;
+}
+
+/* Settings Sections */
+.hms-settings-sections {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.hms-settings-section {
+    display: none;
+}
+
+.hms-settings-section.active {
+    display: block;
+}
+
+/* Form Tables */
+.hms-settings-section .form-table {
+    margin-top: 0;
+}
+
+.hms-settings-section .form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.hms-settings-section .form-table td {
+    padding: 15px 10px;
+    vertical-align: top;
+}
+
+.hms-settings-section .form-table .description {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Form Fields */
+.hms-settings-section input[type="text"],
+.hms-settings-section input[type="email"],
+.hms-settings-section input[type="tel"],
+.hms-settings-section input[type="url"],
+.hms-settings-section input[type="password"],
+.hms-settings-section input[type="number"],
+.hms-settings-section select,
+.hms-settings-section textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+}
+
+.hms-settings-section input[type="text"]:focus,
+.hms-settings-section input[type="email"]:focus,
+.hms-settings-section input[type="tel"]:focus,
+.hms-settings-section input[type="url"]:focus,
+.hms-settings-section input[type="password"]:focus,
+.hms-settings-section input[type="number"]:focus,
+.hms-settings-section select:focus,
+.hms-settings-section textarea:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+/* Radio and Checkbox Groups */
+.hms-radio-group,
+.hms-checkbox-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hms-radio-group label,
+.hms-checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.hms-radio-group input[type="radio"],
+.hms-checkbox-group input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Media Upload */
+.hms-media-upload-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hms-media-preview {
+    max-width: 200px;
+    border: 2px dashed #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.hms-media-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.hms-media-preview.empty {
+    color: #666;
+    font-style: italic;
+}
+
+.hms-media-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Role Capabilities Table */
+.hms-capabilities-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.hms-capabilities-table th,
+.hms-capabilities-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.hms-capabilities-table th {
+    background: #f1f1f1;
+    font-weight: 600;
+}
+
+.hms-capabilities-table td {
+    text-align: center;
+}
+
+.hms-capabilities-table input[type="checkbox"] {
+    margin: 0;
+}
+
+/* White Label Settings */
+.hms-branding-section {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hms-branding-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2271b1;
+    font-size: 16px;
+}
+
+.hms-color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hms-color-picker {
+    width: 50px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hms-color-value {
+    font-family: monospace;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Integration Settings */
+.hms-integration-section {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hms-integration-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2271b1;
+    font-size: 16px;
+}
+
+.hms-gateway-keys {
+    display: none;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.hms-gateway-keys.active {
+    display: flex;
+}
+
+.hms-gateway-keys input {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Notification Settings */
+.hms-notification-section {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hms-notification-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #2271b1;
+    font-size: 16px;
+}
+
+.hms-notification-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.hms-notification-toggle .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.hms-notification-toggle .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hms-notification-toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 24px;
+}
+
+.hms-notification-toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.hms-notification-toggle input:checked+.slider {
+    background-color: #2271b1;
+}
+
+.hms-notification-toggle input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+/* Success/Error Messages */
+.hms-settings-message {
+    padding: 12px 16px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hms-settings-message.success {
+    background: #d1eddb;
+    border: 1px solid #badbcc;
+    color: #155724;
+}
+
+.hms-settings-message.error {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+/* Submit Button */
+.hms-settings-submit {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.hms-settings-submit .button-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hms-settings-tabs .nav-tab {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .hms-settings-section .form-table th,
+    .hms-settings-section .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hms-settings-section .form-table th {
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    .hms-radio-group,
+    .hms-checkbox-group {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .hms-gateway-keys {
+        flex-direction: column;
+    }
+
+    .hms-gateway-keys input {
+        min-width: auto;
+    }
+}
+
+/* Loading States */
+.hms-settings-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.hms-settings-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: hms-spin 1s linear infinite;
+    margin-left: 10px;
+}
+
+@keyframes hms-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Advanced Settings */
+.hms-advanced-section {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hms-advanced-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #856404;
+    font-size: 16px;
+}
+
+.hms-advanced-warning {
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.hms-advanced-warning strong {
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,440 @@
+# Copyright (C) 2023 HMS Development Team
+# This file is distributed under the same license as the Hospital Management System package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hospital Management System 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hospital-management-system\n"
+"POT-Creation-Date: 2023-01-01T00:00:00+00:00\n"
+"PO-Revision-Date: 2023-01-01T00:00:00+00:00\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: WP-CLI 2.8.1\n"
+"X-Domain: hms\n"
+
+#: hospital-management-system.php:100
+msgid "Hospital Management System"
+msgstr ""
+
+#: includes/class-hms-patient.php:150
+msgid "Patient Details"
+msgstr ""
+
+#: includes/class-hms-patient.php:165
+msgid "Medical History"
+msgstr ""
+
+#: includes/class-hms-billing.php:120
+msgid "Bill Details"
+msgstr ""
+
+#: includes/class-hms-billing.php:135
+msgid "Bill Items"
+msgstr ""
+
+#: includes/class-hms-billing.php:150
+msgid "Payment Information"
+msgstr ""
+
+#: includes/class-hms-clinical.php:120
+msgid "Appointment Details"
+msgstr ""
+
+#: includes/class-hms-clinical.php:135
+msgid "Prescription"
+msgstr ""
+
+#: includes/class-hms-clinical.php:150
+msgid "Diagnosis & Notes"
+msgstr ""
+
+#: includes/class-hms-pharmacy.php:120
+msgid "Medicine Details"
+msgstr ""
+
+#: includes/class-hms-pharmacy.php:135
+msgid "Stock Information"
+msgstr ""
+
+#: includes/class-hms-admin-hr.php:120
+msgid "Staff Details"
+msgstr ""
+
+#: includes/class-hms-admin-hr.php:135
+msgid "Role & Department"
+msgstr ""
+
+#: includes/class-hms-admin-hr.php:150
+msgid "Work Schedule"
+msgstr ""
+
+#: includes/class-hms-insurance.php:120
+msgid "Insurance Provider Details"
+msgstr ""
+
+#: includes/class-hms-insurance.php:135
+msgid "Claim Details"
+msgstr ""
+
+#: admin/templates/patient-login.php:10
+msgid "Patient Login"
+msgstr ""
+
+#: admin/templates/patient-login.php:15
+msgid "Patient ID"
+msgstr ""
+
+#: admin/templates/patient-login.php:20
+msgid "Phone Number"
+msgstr ""
+
+#: admin/templates/patient-login.php:25
+msgid "Login"
+msgstr ""
+
+#: admin/templates/patient-login.php:30
+msgid "If you don't have a Patient ID, please contact the hospital reception."
+msgstr ""
+
+#: admin/templates/appointment-booking.php:10
+msgid "Book an Appointment"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:15
+msgid "Department"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:20
+msgid "Select Department"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:30
+msgid "Doctor"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:35
+msgid "Select Doctor"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:45
+msgid "Appointment Date"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:55
+msgid "Appointment Time"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:60
+msgid "Select Time"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:70
+msgid "Reason for Visit"
+msgstr ""
+
+#: admin/templates/appointment-booking.php:80
+msgid "Book Appointment"
+msgstr ""
+
+#: admin/templates/bill-payment.php:10
+msgid "Bill Payment"
+msgstr ""
+
+#: admin/templates/bill-payment.php:20
+msgid "Bill ID"
+msgstr ""
+
+#: admin/templates/bill-payment.php:21
+msgid "Date"
+msgstr ""
+
+#: admin/templates/bill-payment.php:22
+msgid "Type"
+msgstr ""
+
+#: admin/templates/bill-payment.php:23
+msgid "Amount"
+msgstr ""
+
+#: admin/templates/bill-payment.php:24
+msgid "Paid"
+msgstr ""
+
+#: admin/templates/bill-payment.php:25
+msgid "Status"
+msgstr ""
+
+#: admin/templates/bill-payment.php:26
+msgid "Actions"
+msgstr ""
+
+#: admin/templates/bill-payment.php:35
+msgid "View"
+msgstr ""
+
+#: admin/templates/bill-payment.php:40
+msgid "Pay"
+msgstr ""
+
+#: admin/templates/bill-payment.php:50
+msgid "No bills found."
+msgstr ""
+
+#: admin/templates/bill-details.php:10
+msgid "Bill Details"
+msgstr ""
+
+#: admin/templates/bill-details.php:20
+msgid "Patient"
+msgstr ""
+
+#: admin/templates/bill-details.php:21
+msgid "Bill Date"
+msgstr ""
+
+#: admin/templates/bill-details.php:22
+msgid "Bill Type"
+msgstr ""
+
+#: admin/templates/bill-details.php:23
+msgid "Payment Status"
+msgstr ""
+
+#: admin/templates/bill-details.php:30
+msgid "Bill Items"
+msgstr ""
+
+#: admin/templates/bill-details.php:35
+msgid "Description"
+msgstr ""
+
+#: admin/templates/bill-details.php:36
+msgid "Type"
+msgstr ""
+
+#: admin/templates/bill-details.php:37
+msgid "Quantity"
+msgstr ""
+
+#: admin/templates/bill-details.php:38
+msgid "Unit Price"
+msgstr ""
+
+#: admin/templates/bill-details.php:39
+msgid "Total Price"
+msgstr ""
+
+#: admin/templates/bill-details.php:50
+msgid "No items found."
+msgstr ""
+
+#: admin/templates/bill-details.php:60
+msgid "Subtotal"
+msgstr ""
+
+#: admin/templates/bill-details.php:65
+msgid "Discount"
+msgstr ""
+
+#: admin/templates/bill-details.php:70
+msgid "Tax"
+msgstr ""
+
+#: admin/templates/bill-details.php:75
+msgid "Total Amount"
+msgstr ""
+
+#: admin/templates/bill-details.php:80
+msgid "Amount Paid"
+msgstr ""
+
+#: admin/templates/bill-details.php:85
+msgid "Balance Due"
+msgstr ""
+
+#: admin/templates/bill-details.php:95
+msgid "Print Bill"
+msgstr ""
+
+#: admin/templates/bill-details.php:100
+msgid "Download PDF"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:10
+msgid "Patient Dashboard"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:20
+msgid "Patient ID"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:21
+msgid "Date of Birth"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:22
+msgid "Phone"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:23
+msgid "Email"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:35
+msgid "Appointments"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:36
+msgid "Bills"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:37
+msgid "Prescriptions"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:38
+msgid "Medical Records"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:50
+msgid "Upcoming Appointments"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:55
+msgid "Date"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:56
+msgid "Time"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:57
+msgid "Doctor"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:58
+msgid "Department"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:59
+msgid "Status"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:75
+msgid "No appointments found."
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:80
+msgid "Book New Appointment"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:90
+msgid "Your Bills"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:110
+msgid "No bills found."
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:125
+msgid "Your Prescriptions"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:135
+msgid "Doctor"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:140
+msgid "Medication"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:141
+msgid "Dosage"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:142
+msgid "Duration"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:143
+msgid "Instructions"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:160
+msgid "No prescriptions found."
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:170
+msgid "Medical Records"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:175
+msgid "Allergies"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:180
+msgid "Medical History"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:185
+msgid "Vitals"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:190
+msgid "Temperature"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:191
+msgid "Blood Pressure"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:192
+msgid "Pulse"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:193
+msgid "Respiratory Rate"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:194
+msgid "Oxygen Saturation"
+msgstr ""
+
+#: admin/templates/patient-dashboard.php:210
+msgid "No vitals recorded."
+msgstr ""
+
+#: admin/templates/reports-page.php:10
+msgid "Reports & Analytics"
+msgstr ""
+
+#: admin/templates/reports-page.php:20
+msgid "Start Date"
+msgstr ""
+
+#: admin/templates/reports-page.php:25
+msgid "End Date"
+msgstr ""
+
+#: admin/templates/reports-page.php:35
+msgid "Patient Census"
+msgstr ""
+
+#: admin/templates/reports-page.php:40
+msgid "Revenue Report"
+msgstr ""
+
+#: admin/templates/reports-page.php:45
+msgid "Insurance Report"
+msgstr ""
+
+#: admin/templates/reports-page.php:50
+msgid "Pharmacy Sales"
+msgstr ""
+
+#: admin/templates/reports-page.php:60
+msgid "Select a date range and click on a report button to generate a report."
+msgstr ""

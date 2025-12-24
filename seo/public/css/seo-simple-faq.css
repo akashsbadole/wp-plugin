@@ -1,0 +1,121 @@
+/**
+ * FAQ Styles for SEO Simple Plugin
+ *
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/public/css
+ */
+
+.seo-simple-faq-container {
+	margin: 20px 0;
+}
+
+.seo-simple-faq-item {
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+.seo-simple-faq-question {
+	padding: 15px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #ddd;
+	transition: background-color 0.2s ease;
+}
+
+.seo-simple-faq-question:hover {
+	background-color: #f0f0f0;
+}
+
+.seo-simple-faq-question h4 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+}
+
+.seo-simple-faq-toggle {
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	transition: transform 0.2s ease;
+}
+
+.seo-simple-faq-item.active .seo-simple-faq-toggle {
+	transform: rotate(45deg);
+}
+
+.seo-simple-faq-answer {
+	display: none;
+	padding: 15px;
+	background-color: #fff;
+}
+
+.seo-simple-faq-item.active .seo-simple-faq-answer {
+	display: block;
+}
+
+.seo-simple-faq-answer-content {
+	line-height: 1.6;
+	color: #555;
+}
+
+.seo-simple-faq-answer-content p:last-child {
+	margin-bottom: 0;
+}
+
+/* Schema.org FAQPage styles for better accessibility */
+.seo-simple-faq-item[itemscope] {
+	itemtype: "https://schema.org/Question";
+}
+
+.seo-simple-faq-question[itemprop="name"] {
+	/* Question styles */
+}
+
+.seo-simple-faq-answer[itemprop="acceptedAnswer"] {
+	/* Answer styles */
+}
+
+.seo-simple-faq-answer-content[itemprop="text"] {
+	/* Answer text styles */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+	.seo-simple-faq-question {
+		padding: 12px;
+	}
+	
+	.seo-simple-faq-question h4 {
+		font-size: 15px;
+	}
+	
+	.seo-simple-faq-answer {
+		padding: 12px;
+	}
+}
+
+/* Print styles */
+@media print {
+	.seo-simple-faq-item {
+		border: 1px solid #ccc;
+		page-break-inside: avoid;
+	}
+	
+	.seo-simple-faq-question {
+		background-color: #f5f5f5 !important;
+	}
+	
+	.seo-simple-faq-toggle {
+		display: none;
+	}
+	
+	.seo-simple-faq-answer {
+		display: block !important;
+	}
+}

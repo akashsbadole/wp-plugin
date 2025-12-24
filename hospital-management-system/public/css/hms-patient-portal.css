@@ -1,0 +1,330 @@
+/* Hospital Management System - Patient Portal Styles */
+
+/* --- General Layout & Typography --- */
+.hms-patient-portal-container,
+.hms-appointment-booking-container,
+.hms-patient-portal-dashboard-container,
+.hms-telemedicine-session-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Forms --- */
+.hms-form-field {
+    margin-bottom: 20px;
+}
+
+.hms-form-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.hms-input,
+.hms-select,
+.hms-textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.hms-input:focus,
+.hms-select:focus,
+.hms-textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+}
+
+.hms-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+/* --- Buttons --- */
+.hms-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.hms-button-primary {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+.hms-button-primary:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.hms-button-secondary {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-color: #bdc3c7;
+}
+
+.hms-button-secondary:hover {
+    background-color: #bdc3c7;
+    color: #fff;
+}
+
+.hms-button:disabled {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    border-color: #bdc3c7;
+}
+
+.hms-form-submit {
+    margin-top: 25px;
+}
+
+/* --- Sections & Fieldsets --- */
+.hms-appointment-section,
+.hms-dashboard-section {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* --- Patient Portal Login --- */
+.hms-patient-portal-login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hms-form-links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* --- Patient Portal Dashboard --- */
+.hms-dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hms-dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.hms-appointments-summary,
+.hms-bills-summary,
+.hms-records-summary,
+.hms-profile-management {
+    display: flex;
+    flex-direction: column;
+}
+
+.hms-profile-actions {
+    margin-top: 15px;
+}
+
+.hms-profile-actions .hms-button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* --- Modals --- */
+.hms-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.hms-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 700px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.hms-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.hms-modal-close:hover,
+.hms-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* --- Messages & Loading --- */
+.hms-message,
+.hms-error-message,
+.hms-success-message,
+.hms-loading-text {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.hms-error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.hms-success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.hms-loading-text {
+    background-color: #e2e3e5;
+    color: #6c757d;
+    border: 1px solid #d6d8db;
+    text-align: center;
+    font-style: italic;
+}
+
+.hms-form-errors {
+    margin-bottom: 20px;
+}
+
+/* --- Telemedicine Session --- */
+.hms-session-details,
+.hms-session-join-area,
+.hms-session-help {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.hms-join-session-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.hms-important-notice {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.hms-disclaimer {
+    font-size: 14px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .hms-patient-portal-container,
+    .hms-appointment-booking-container,
+    .hms-patient-portal-dashboard-container,
+    .hms-telemedicine-session-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .hms-dashboard-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hms-modal-content {
+        width: 95%;
+        margin: 15% auto;
+    }
+}

@@ -1,0 +1,70 @@
+/* Admin Styles */
+.ess-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.ess-info code {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f0f0f1;
+    border: 1px solid #c3c4c7;
+    border-radius: 3px;
+}
+
+/* Network Icon Preview */
+.ess-network-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.ess-network-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Color Preview */
+.ess-color-preview {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Form Styles */
+.form-table td .description {
+    margin-top: 5px;
+    color: #666;
+}
+
+/* Network List */
+.wp-list-table .ess-network-icon {
+    margin-right: 10px;
+}
+
+/* Color Picker */
+.ess-color-picker {
+    width: 100px !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .form-table td input[type="text"],
+    .form-table td input[type="url"],
+    .form-table td select {
+        width: 100%;
+    }
+    
+    .ess-color-picker {
+        width: 100% !important;
+    }
+} 

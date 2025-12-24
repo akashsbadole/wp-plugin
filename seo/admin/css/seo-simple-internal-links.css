@@ -1,0 +1,357 @@
+/**
+ * Internal Links Admin Styles
+ *
+ * @since 1.0.0
+ */
+
+/* Internal Links Container */
+.seo-simple-internal-links-container {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.seo-simple-internal-links-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.seo-simple-internal-links-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.seo-simple-suggestions-count {
+    background-color: #0073aa;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Internal Links Suggestions */
+.seo-simple-internal-links-suggestions {
+    margin-top: 15px;
+}
+
+.seo-simple-internal-link-suggestion {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.seo-simple-internal-link-suggestion h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.seo-simple-internal-link-suggestion h4 a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.seo-simple-internal-link-suggestion h4 a:hover {
+    text-decoration: underline;
+}
+
+.seo-simple-internal-link-suggestion p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Anchor Text Suggestions */
+.seo-simple-anchor-text-suggestions {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.seo-simple-anchor-text-suggestions li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+}
+
+.seo-simple-anchor-text-suggestions code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.seo-simple-insert-link {
+    margin-top: 10px;
+}
+
+/* Search Posts */
+.seo-simple-search-posts-container {
+    margin: 15px 0;
+}
+
+.seo-simple-search-posts-form {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.seo-simple-keyword-search {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.seo-simple-search-results {
+    margin-top: 15px;
+}
+
+.seo-simple-posts-list {
+    margin-top: 15px;
+}
+
+.seo-simple-post-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.seo-simple-post-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.seo-simple-post-item h4 a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.seo-simple-post-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.seo-simple-post-item p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Orphaned Posts */
+.seo-simple-orphaned-posts-container {
+    margin: 15px 0;
+}
+
+.seo-simple-orphaned-posts-results {
+    margin-top: 15px;
+}
+
+.seo-simple-orphaned-posts-list {
+    margin-top: 15px;
+}
+
+.seo-simple-orphaned-post-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid #dc3232;
+    border-radius: 4px;
+}
+
+.seo-simple-orphaned-post-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+
+.seo-simple-orphaned-post-item h4 a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.seo-simple-orphaned-post-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.seo-simple-orphaned-post-item p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Loading Indicator */
+.seo-simple-loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.seo-simple-loading::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: seo-simple-spin 1s linear infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@keyframes seo-simple-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Messages */
+.seo-simple-internal-links .notice {
+    margin: 10px 0;
+}
+
+/* Dashboard Widget */
+#seo_simple_internal_links_dashboard .inside {
+    margin: 0;
+    padding: 12px;
+}
+
+.seo-simple-dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.seo-simple-dashboard-stat {
+    text-align: center;
+    flex: 1;
+}
+
+.seo-simple-dashboard-stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.seo-simple-dashboard-stat-label {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Settings Page */
+.seo-simple-internal-links-settings {
+    max-width: 800px;
+}
+
+.seo-simple-internal-links-settings .form-table {
+    margin-top: 20px;
+}
+
+.seo-simple-internal-links-settings .form-table th {
+    width: 200px;
+}
+
+.seo-simple-internal-links-settings .form-table td {
+    padding: 15px 10px;
+}
+
+.seo-simple-internal-links-settings .description {
+    font-style: italic;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 782px) {
+    .seo-simple-internal-links-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .seo-simple-suggestions-count {
+        margin-top: 5px;
+    }
+    
+    .seo-simple-search-posts-form {
+        flex-direction: column;
+    }
+    
+    .seo-simple-keyword-search {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .seo-simple-dashboard-stats {
+        flex-direction: column;
+    }
+    
+    .seo-simple-dashboard-stat {
+        margin-bottom: 15px;
+    }
+}
+
+/* Gutenberg Integration */
+.block-editor .seo-simple-internal-links-container {
+    margin: 15px 0;
+    border: 1px solid #e2e4e7;
+    background-color: #fff;
+}
+
+.block-editor .seo-simple-internal-links-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e4e7;
+    background-color: #f8f9f9;
+}
+
+.block-editor .seo-simple-internal-links-suggestions {
+    padding: 15px;
+}
+
+.block-editor .seo-simple-internal-link-suggestion {
+    border-color: #e2e4e7;
+}
+
+.block-editor .seo-simple-insert-link {
+    height: 32px;
+    line-height: 30px;
+    padding: 0 12px;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+/* Animation for new suggestions */
+.seo-simple-internal-links-suggestions .seo-simple-internal-link-suggestion {
+    animation: seo-simple-fade-in 0.5s ease-in-out;
+}
+
+@keyframes seo-simple-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode support */
+.is-dark-theme .seo-simple-internal-links-container {
+    background-color: #1e1e1e;
+    border-color: #3c3c3c;
+    color: #f0f0f0;
+}
+
+.is-dark-theme .seo-simple-internal-link-suggestion,
+.is-dark-theme .seo-simple-post-item {
+    background-color: #2d2d2d;
+    border-color: #3c3c3c;
+}
+
+.is-dark-theme .seo-simple-anchor-text-suggestions code {
+    background-color: #3c3c3c;
+    color: #f0f0f0;
+}

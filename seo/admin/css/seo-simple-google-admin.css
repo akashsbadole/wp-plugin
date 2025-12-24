@@ -1,0 +1,459 @@
+/**
+ * Google Integration Admin Styles
+ *
+ * @since      1.0.0
+ * @package    Seo_Simple
+ * @subpackage Seo_Simple/admin/css
+ */
+
+/* Google Settings Page */
+.seo-simple-google-settings {
+    margin: 20px 0;
+}
+
+.seo-simple-google-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+.seo-simple-google-section-header {
+    padding: 8px 12px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.seo-simple-google-section-content {
+    padding: 15px;
+}
+
+.seo-simple-google-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccd0d4;
+    margin-bottom: 20px;
+}
+
+.seo-simple-google-tabs .tab-button {
+    padding: 10px 15px;
+    background: #f1f1f1;
+    border: 1px solid #ccd0d4;
+    border-bottom: none;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.2s ease;
+}
+
+.seo-simple-google-tabs .tab-button:hover {
+    background: #e5e5e5;
+}
+
+.seo-simple-google-tabs .tab-button.active {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.seo-simple-google-tab {
+    display: none;
+}
+
+.seo-simple-google-tab.active {
+    display: block;
+}
+
+.seo-simple-google-form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seo-simple-google-form-table th {
+    width: 200px;
+    padding: 15px 10px 15px 0;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+.seo-simple-google-form-table td {
+    padding: 15px 10px;
+}
+
+.seo-simple-google-form-table td label {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.seo-simple-google-form-table .description {
+    color: #666;
+    font-style: italic;
+    margin: 5px 0 0;
+    font-size: 13px;
+}
+
+.seo-simple-google-authentication-status {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.seo-simple-google-authentication-status.authenticated {
+    background-color: #f0f8f0;
+    border: 1px solid #4caf50;
+    color: #2e7d32;
+}
+
+.seo-simple-google-authentication-status.not-authenticated {
+    background-color: #fff3f3;
+    border: 1px solid #f44336;
+    color: #d32f2f;
+}
+
+.seo-simple-google-connection-test {
+    margin-top: 10px;
+}
+
+.seo-simple-google-connection-test .button {
+    margin-right: 10px;
+}
+
+.seo-simple-google-connection-status {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.seo-simple-google-connection-status.success {
+    color: #4caf50;
+}
+
+.seo-simple-google-connection-status.error {
+    color: #f44336;
+}
+
+/* Analytics Page */
+.seo-simple-analytics-page {
+    margin: 20px 0;
+}
+
+.seo-simple-date-range-selector {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-date-range-selector .date-fields {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.seo-simple-date-range-selector .date-field {
+    margin-right: 15px;
+}
+
+.seo-simple-date-range-selector .date-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.seo-simple-date-range-selector .date-presets {
+    margin-top: 10px;
+}
+
+.seo-simple-date-range-selector .date-presets .button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.seo-simple-analytics-filters {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-analytics-filters h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.seo-simple-analytics-filters .filter-section {
+    margin-bottom: 15px;
+}
+
+.seo-simple-analytics-filters .filter-section h4 {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.seo-simple-analytics-filters .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seo-simple-analytics-filters .filter-option {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.seo-simple-stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-stat {
+    flex: 1;
+    min-width: 150px;
+    margin: 0 10px 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.seo-simple-stat-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #23282d;
+    margin-bottom: 5px;
+}
+
+.seo-simple-stat-label {
+    font-size: 13px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.seo-simple-data-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-data-container h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.seo-simple-data-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seo-simple-data-container th,
+.seo-simple-data-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.seo-simple-data-container th {
+    font-weight: 600;
+    background: #f9f9f9;
+}
+
+.seo-simple-data-container tr:last-child td {
+    border-bottom: none;
+}
+
+.seo-simple-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.seo-simple-loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #0073aa;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Search Console Page */
+.seo-simple-search-console-page {
+    margin: 20px 0;
+}
+
+.seo-simple-search-console-auth {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-search-console-auth h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.seo-simple-search-console-auth .auth-form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.seo-simple-search-console-auth .auth-form .form-field {
+    margin-right: 15px;
+}
+
+.seo-simple-search-console-auth .auth-form .form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.seo-simple-search-console-auth .auth-form .button {
+    margin-right: 10px;
+}
+
+.seo-simple-search-console-data {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.seo-simple-search-console-data h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.seo-simple-search-console-data .data-filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.seo-simple-search-console-data .data-filters .filter-group {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.seo-simple-search-console-data .data-filters .filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Meta Box Google Tab */
+.seo-simple-meta-google-section {
+    margin-bottom: 15px;
+}
+
+.seo-simple-meta-google-section h4 {
+    margin: 0 0 10px;
+    font-size: 13px;
+}
+
+.seo-simple-meta-google-field {
+    margin-bottom: 10px;
+}
+
+.seo-simple-meta-google-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.seo-simple-meta-google-field input[type="text"],
+.seo-simple-meta-google-field select {
+    width: 100%;
+}
+
+.seo-simple-meta-google-field .description {
+    font-size: 11px;
+    color: #666;
+    font-style: italic;
+    margin: 3px 0 0;
+}
+
+.seo-simple-meta-google-conditional {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .seo-simple-stats-grid {
+        flex-direction: column;
+    }
+    
+    .seo-simple-stat {
+        margin: 0 0 15px;
+    }
+    
+    .seo-simple-google-tabs {
+        flex-wrap: wrap;
+    }
+    
+    .seo-simple-google-tabs .tab-button {
+        margin-bottom: 5px;
+    }
+    
+    .seo-simple-date-range-selector .date-fields {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .seo-simple-date-range-selector .date-field {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .seo-simple-analytics-filters .filter-options {
+        flex-direction: column;
+    }
+    
+    .seo-simple-analytics-filters .filter-option {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .seo-simple-search-console-auth .auth-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .seo-simple-search-console-auth .auth-form .form-field {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .seo-simple-search-console-data .data-filters {
+        flex-direction: column;
+    }
+    
+    .seo-simple-search-console-data .data-filters .filter-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

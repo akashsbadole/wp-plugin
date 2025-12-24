@@ -1,0 +1,247 @@
+.hms-custom-fields-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+}
+
+.hms-field-group-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.hms-field-group-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #ccd0d4;
+    padding: 12px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hms-field-group-title {
+    margin: 0;
+    font-size: 1.1em;
+    color: #23282d;
+}
+
+.hms-field-group-actions .button {
+    margin-left: 8px;
+}
+
+.hms-field-group-body {
+    padding: 15px;
+}
+
+.hms-field-group-body p {
+    margin: 0 0 8px;
+    color: #555;
+}
+
+.hms-field-group-body p:last-child {
+    margin-bottom: 0;
+}
+
+.hms-field-group-form {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.hms-field-group-form h3 {
+    margin-top: 0;
+    color: #23282d;
+}
+
+.hms-field-group-form .hms-form-field {
+    margin-bottom: 15px;
+}
+
+.hms-field-group-form .hms-form-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #23282d;
+}
+
+.hms-field-group-form .hms-form-field input[type="text"],
+.hms-field-group-form .hms-form-field input[type="email"],
+.hms-field-group-form .hms-form-field input[type="tel"],
+.hms-field-group-form .hms-form-field input[type="number"],
+.hms-field-group-form .hms-form-field input[type="date"],
+.hms-field-group-form .hms-form-field select,
+.hms-field-group-form .hms-form-field textarea {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #7e8993;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    background-color: #fff;
+    color: #32373c;
+    transition: border-color .15s;
+}
+
+.hms-field-group-form .hms-form-field input[type="text"]:focus,
+.hms-field-group-form .hms-form-field input[type="email"]:focus,
+.hms-field-group-form .hms-form-field input[type="tel"]:focus,
+.hms-field-group-form .hms-form-field input[type="number"]:focus,
+.hms-field-group-form .hms-form-field input[type="date"]:focus,
+.hms-field-group-form .hms-form-field select:focus,
+.hms-field-group-form .hms-form-field textarea:focus {
+    color: #32373c;
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 1px #0073aa;
+}
+
+.hms-field-group-form .hms-form-field label input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.hms-custom-field-item {
+    background: #f8f9fa;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.hms-custom-field-header {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.hms-custom-field-header:hover {
+    background: #eaeaea;
+}
+
+.hms-custom-field-label {
+    font-weight: 600;
+    color: #23282d;
+}
+
+.hms-custom-field-body {
+    padding: 15px;
+    border-top: 1px solid #ccd0d4;
+}
+
+.hms-custom-field-body .hms-form-field {
+    margin-bottom: 12px;
+}
+
+.hms-custom-field-body .hms-form-field:last-child {
+    margin-bottom: 0;
+}
+
+#hms-add-new-field-group {
+    margin-top: 20px;
+}
+
+#hms-add-new-field {
+    margin-top: 15px;
+}
+
+.submit {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.submit .spinner {
+    float: none;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Styles for the custom fields on the front-end and other forms */
+.hms-custom-fields-group {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.hms-custom-fields-group h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #444;
+}
+
+
+#hms-existing-custom-fields-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+#hms-fields-list-container .field-item {
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    position: relative;
+}
+
+#hms-fields-list-container .field-item h4 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+}
+
+#hms-fields-list-container .field-item p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+#hms-fields-list-container .field-item .field-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#hms-fields-list-container .field-item .field-actions a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #a00;
+}
+
+#hms-fields-list-container .field-item .field-actions a:hover {
+    color: #dc3232;
+}
+
+#hms-fields-list-container .field-item .field-context-badge {
+    display: inline-block;
+    background-color: #0073aa;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.hms-custom-fields-table .required {
+    color: #dc3232;
+    font-weight: bold;
+}
+
+/* Style for the field options row when it's visible */
+#field_options_row {
+    display: table-row; /* Override inline style if JS shows it */
+}
